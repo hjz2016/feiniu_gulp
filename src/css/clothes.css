@@ -1,0 +1,248 @@
+/* 衣服 */
+
+.mid_wrap .mid_block_clothes{
+		width: 1190px;
+		margin: 0 auto;
+		height: 524px;
+		margin-top: 20px;
+		background: url(http://static02.fn-mart.com/product/images/index/feiniu.gif?170725) center center no-repeat;
+	}
+
+		.mid_wrap .mid_block_clothes .block_top{
+			width: 100%;
+			height: 36px;
+			border-bottom: 1px solid #d7063b;
+		}
+
+		.mid_wrap .mid_block_clothes .block_top .food_title{
+			float: left;
+			font-size: 20px;
+		}
+
+		#floor_index{
+			font-size: 14px;
+		    color: #fff;
+		    text-align: center;
+		    width: 30px;
+		    height: 25px;
+		    line-height: 21px;
+		    float: left;
+		    overflow: hidden;
+		    margin-top: 4px;
+		    margin-right: 4px;
+		    background: url(http://static01.fn-mart.com/product/images/index/fn_index.png?170725) -124px -94px no-repeat;
+		}
+	
+	.mid_wrap .mid_block_clothes .block_top ul{
+		float: right;
+		border: 1px solid #E9E9E9;
+		border-bottom: 1px solid #d7063b;
+	}
+
+	.mid_wrap .mid_block_clothes .block_top ul li{
+		float: left;
+		width: 120px;
+		height: 35px;
+		text-align: center;
+		line-height: 35px;
+		position: relative;
+
+	}
+
+	.mid_wrap .mid_block_clothes .block_top ul .acti a{
+		width: 119px;
+	    height: 36px;
+	    line-height: 36px;
+	    color: #d7063b;
+	    font-weight: 700;
+	    position: absolute;
+	    /* text-indent: 2px; */
+	    top: -1px;
+	    border: 1px solid #d7063b;
+	    border-bottom: none;
+	    left: -1px;
+	    background-color: #fff;
+    	overflow: hidden;
+    	display: inline-block;
+	}
+
+	.mid_wrap .mid_block_clothes .block_top ul .acti span{
+		display: none;
+	}
+
+		.mid_wrap .mid_block_clothes .block_top ul li a{
+			float: left;
+			color: #666;
+			
+			display: block;
+			width: 100%;
+
+		}
+
+		.mid_wrap .mid_block_clothes .block_top ul li span{
+			width: 1px;
+		    height: 16px;
+		    display: inline-block;
+		    background-color: #E9E9E9;
+		    position: absolute;
+		    right: 0;
+		    top: 10px;
+		}
+
+	.mid_wrap .mid_block_clothes .food_mid_lf{
+		float: left;
+		width: 190px;
+		height: 488px;
+		position:relative;
+	}
+
+		.mid_wrap .mid_block_clothes .food_mid_lf .mid_lf_bg a{
+			display: block;
+		}
+
+		.mid_wrap .mid_block_clothes .food_mid_lf ul{
+			position: absolute;
+			top: 244px;
+			background: rgba(255,255,255,.5);
+			width: 170px;
+		    height: 46px;
+		    padding: 8px 10px;
+		}
+
+		.mid_wrap .mid_block_clothes .food_mid_lf ul li{
+		    line-height: 23px;
+		    width: 150px;
+		    margin: 0 10px;
+		    white-space: nowrap;
+		    font-size: 12px;
+		    overflow: hidden;
+		    float: left;
+		}
+
+		.mid_wrap .mid_block_clothes .food_mid_lf ul li a{ 
+			color: #666;
+		    
+		}
+
+		.mid_wrap .mid_block_clothes .food_mid_lf p{ 
+			width: 170px;
+		    height: 173px;
+		    padding: 9px 10px 0;
+		    font-size: 0;
+		    position: absolute;
+		    bottom: 0;
+		    background: rgba(255,255,255,.7);
+		    overflow: hidden;
+		    text-align: left;
+		}
+		
+		.mid_wrap .mid_block_clothes .food_mid_lf p a{
+			display: inline-block !important;
+			width: 36px;
+		    color: #666;
+		    font-size: 12px;
+		    margin: 0 7px;
+		    line-height: 27px;
+		    /* max-width: 36px; */
+		    overflow: hidden;
+		    white-space: nowrap;
+		    text-align: center;
+		}
+
+	.mid_wrap .mid_block_clothes .block_mid_main{
+		position: relative;
+		float: left;
+		width: 1000px;
+		height: 488px;
+		z-index: 10;
+		background: #fff;
+	}
+	
+	.mid_wrap .mid_block_clothes .block_mid_main>li{
+		position: absolute;
+		left: 0;
+		display: none;
+		
+	}	
+		.mid_wrap .mid_block_clothes .block_mid_main .list1_ctx{
+			/* display: none; */
+			width: 100%;
+		}
+
+		.mid_wrap .mid_block_clothes .block_mid_main .list1_ctx li div:first-child{
+			border-bottom: 1px solid #E9E9E9;
+			height: 100%;
+		}
+		
+		.mid_wrap .mid_block_clothes .block_mid_main .list1_ctx li a{
+			display: block;
+		}
+
+		.mid_wrap .mid_block_clothes .block_mid_main .list1_ctx li img{
+			display: block;
+		}
+
+		.mid_wrap .mid_block_clothes .block_mid_main .list1_ctx li{
+			float: left;
+			border-right: 1px solid #E9E9E9;
+		    border-bottom: 1px solid #E9E9E9;
+		}
+		
+
+		/* 普通商品 */
+
+		.mid_wrap .mid_block_clothes .block_mid_main .list_ctx{
+			width: 100%;
+		}
+
+		.mid_wrap .mid_block_clothes .block_mid_main .list_ctx li{
+			float: left;
+			width: 160px;
+			height: 233px;
+			padding: 10px 19px 0 20px;
+			border-right: 1px solid #E9E9E9;
+		    border-bottom: 1px solid #E9E9E9;
+		    overflow: hidden;
+		}
+
+		.mid_wrap .mid_block_clothes .block_mid_main .list_ctx li p{
+			height: 36px;
+		}
+
+		.mid_wrap .mid_block_clothes .block_mid_main .list_ctx li .goods_price{
+			font-size: 16px;
+		    color: #d7063b;
+		    font-weight: 700;
+		}
+
+
+
+.mid_wrap .clothes_brand_wrap{
+	width: 1190px;
+	margin: 0 auto;
+	height: 30px;
+    padding: 15px 0;
+    background-color: #FBFBFB;
+    margin-top: 10px;
+}
+
+	.mid_wrap .clothes_brand_wrap ul{
+		overflow: hidden;
+	}
+
+	.mid_wrap .clothes_brand_wrap ul li{
+		    float: left;
+		    width: 118px;
+		    height: 30px;
+		    text-align: center;
+	}
+
+	.mid_wrap .clothes_brand_wrap ul li:not(.first_li){
+		    border-left: 1px dotted #ccc; 
+	}
+
+	.mid_wrap .clothes_brand_wrap ul li a{
+		   width: 100px;
+		    height: 30px;
+		    display: inline-block;
+	}

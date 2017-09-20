@@ -1,0 +1,85 @@
+.floor_wrap{
+	height: 100px;
+	background: #ccc;
+	opacity: 0;
+    display: block;
+    width: 33px;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin-top: -171px;
+    margin-left: -640px;
+    border: 1px solid #E5E5E5;
+    background-color: #fff;
+    transition: all .5s;
+    transform: scale(1.2);
+    z-index: 100000;
+    /* display: none; */
+
+    .oh{
+    	font-size: 0;
+	    width: 33px;
+		
+		li.active{
+
+			.title{
+				display: block;
+			    color: #d7063b;
+			}
+
+			a{
+				display: none;
+				
+				&:hover{
+    				background: #d7063b;
+    				color: #fff;
+    				display: block;
+    			}
+			}
+
+		} 
+
+	    li{
+		    overflow: hidden;
+		    cursor: pointer;
+		    margin-top: -1px;
+
+		    &:hover{
+		    	.title{
+		    		display:block;
+		    	}
+		    	a{
+		    		display: none;
+		    		background: #d7063b;
+    				color: #fff;
+		    	}
+		    }
+
+		    .title{
+		    	display: none;
+			    width: 32px;
+			    height: 30px;
+			    line-height: 13px;
+			    color: #fff;
+			    padding: 5px 0 0 1px;
+			    font-size: 12px;
+		    }
+
+		    a{	
+		    	display: block;
+		    	width: 33px;
+			    height: 35px;
+			    line-height: 35px;
+			    text-align: center;
+				font-size: 14px;
+				color: #999;
+				margin: 0 auto;
+    			background: url(http://static02.fn-mart.com/product/images/index/fn_index.png?170725) -124px -57px no-repeat;
+
+
+		    }
+	    }
+    }
+}

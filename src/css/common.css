@@ -1,0 +1,1697 @@
+/* 触碰变红 */
+.red:hover{
+	color: #d7063b;
+}
+
+.point:hover{
+	color: #d7063b !important;
+	text-decoration: underline;
+}
+
+.under:hover{
+	text-decoration: underline !important;
+}
+
+/* 头部 */
+.header{
+	width: 100%;
+}
+	/* 头部广告 */
+	.header .ad{
+		background:rgb(255, 156, 0);
+		position: relative;
+		z-index: 0;
+		/* height: 60px;	 */
+	}
+
+	.header .ad .outer{
+		display: block;
+		width: 1190px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 0;
+		height: 300px;
+	}
+
+	.header .ad #spread{
+		top: 0;
+		width: 20px;
+	    height: 42px;
+	    position: absolute;
+	    right: 150px;
+	    background:url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) no-repeat;
+	    background-position: -74px 0;
+	    z-index: 10;
+	    cursor: pointer;
+	}
+
+	.header .ad #close{
+		top: 0;
+	    right: 120px;
+		width: 16px;
+	    height: 16px;
+	    position: absolute;
+	    z-index: 10;
+	    cursor: pointer;
+	    background:url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) 0 -96px no-repeat;
+	}
+
+	.header .ad #close:hover{
+		background-position: -18px -96px;
+	}
+	
+
+	/* 头部 导航栏 */
+	.header .top_bar{
+		width: 100%;
+	    height: 35px;
+	    line-height: 35px;
+	    border-bottom: 1px solid #dedede;
+	    background-color: #f7f7f7;
+	}
+
+	.header .top_bar .bar_center{
+		width: 1190px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	/* 导航栏 左边 */
+
+	.header .top_bar .bar_center .lf{
+		float: left;
+		height: 100%;
+	}
+
+	.header .top_bar .bar_center li{
+		float: left;
+		position: relative;
+	}
+
+	.header .top_bar .bar_center .lf li .regi{
+		margin-left: 5px;
+	}
+
+	.header .top_bar .bar_center .line{
+		width: 1px;
+	    height: 10px;
+	    padding: 0;
+	    background: #dedede;
+	    margin: 0 11px;
+	    margin-top: 13px;
+
+	}
+
+	.header .top_bar .bar_center .lf li .arrow{
+		width: 7px;
+	    height: 4px;
+	    top: 16px;
+	    right: -10px;
+	    position: absolute;
+
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -140px -28px no-repeat;
+	}
+
+	/* 导航栏 右边 */
+
+	.header .top_bar .bar_center .rt{
+		float: right;
+		height: 100%;
+		position: relative;
+	}
+
+	.header .top_bar .bar_center .rt .myFeiniu{
+		width: 75px;
+		height: 35px;
+		position: relative;
+		z-index: 1001111;
+	}
+
+	.header .top_bar .bar_center .rt .feiniu_app{
+		position: relative;
+		z-index: 1001111;
+		padding: 0 5px;
+	}
+
+	.header .top_bar .bar_center .rt .hoverFeiniu_app{
+		background: #fff;
+	    border: solid #DEDEDE;
+	    border-width: 0 1px;
+	    height: 34px;
+	    left: 0px;
+	    border-bottom: 1px solid #fff;
+		padding:0 4px;
+	}
+
+	.header .top_bar .bar_center .rt .hoverFeiniu{
+		background: #fff;
+	    border: solid #DEDEDE;
+	    border-width: 0 1px;
+	    height: 34px;
+	    left: 1px;
+	    border-bottom: 1px solid #fff;
+		
+	}
+
+	.header .top_bar .bar_center .rt .hoverFeiniu+.hide_feiniu{
+		left: 1px;
+	}
+
+	.header .top_bar .bar_center .rt .myFeiniu a{
+		padding-left: 10px;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu {
+		width: 282px;
+		left: -1px;
+		position: absolute;
+		background: #fff;
+		z-index: 1000111;
+		border: 1px solid #DEDEDE;
+		top: 34px;
+		display: none;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app{
+		width: 282px;
+		left: 255px;
+		position: absolute;
+		background: #fff;
+		z-index: 1000111;
+		border: 1px solid #DEDEDE;
+		top: 34px;
+		display: none;
+	    height: 158px;
+	    padding-left: 16px;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app dt{
+		width: 116px;
+	    height: 116px;
+	    margin: 21px 16px 0 0;
+	    float: left;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app .app_name{
+		font-size: 0;
+	    margin-top: 17px;
+	    float: left;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app .app_name p{
+		font-size: 12px;
+	    color: #666;
+	    height: 21px;
+	    line-height: 21px;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app .app_pic{
+		padding-left: 5px;
+		float: left;
+		margin-top: 12px;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app .app_pic a{
+		margin-right: 20px;
+		display: inline-block;
+	    width: 50px;
+	    padding-top: 50px;
+	    cursor: pointer;
+	    line-height: 20px;
+	    text-align: center;
+	    color: #666;
+	    font-size: 12px;
+	    position: relative;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app .app_pic i{
+		width: 50px;
+	    height: 50px;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app .app_pic .ipn{
+		background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -211px -52px no-repeat;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu_app .app_pic .andr{
+		background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -211px 0px no-repeat;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .feiniu_top{
+		padding: 15px;
+	    height: 80px;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .u_pic{
+		margin-right: 15px;
+	    width: 80px;
+	    height: 80px;
+	    float: left;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .u_pic a{
+		display: block;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .u_pic img{
+		border: 1px solid #E2E2E2;
+	    width: 80px;
+	    height: 80px;
+	    padding: 1px;
+	    border-radius: 50%;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .u_nologin{
+		height: 80px;
+	    line-height: 80px;
+	    float: left;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .u_nologin p{
+		text-align: center;
+	    font-size: 13px;
+	    font-weight: 700;
+	    color: #333;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .u_titles{
+		height: 85px;
+	    width: 265px;
+	    padding: 0 0 15px 15px;
+	}
+
+	.header .top_bar .bar_center .rt .hide_feiniu .u_titles li{
+		width: 120px;
+	    height: 24px;
+	    line-height: 24px;
+	    margin-right: 10px;
+	    float: left;
+	    display: block;
+	    overflow: hidden;
+	}
+
+
+	
+
+	.header .top_bar .bar_center .rt li .arrow{
+		width: 7px;
+	    height: 4px;
+	    display: inline-block;
+	    position: relative;
+	    top: -3px;
+	    transition: all .5s;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -140px -28px no-repeat;
+	}
+
+	.header .top_bar .bar_center .rt .charging{
+		width: 11px;
+	    height: 16px;
+	    display: inline-block;
+	    margin-bottom: -3px;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -36px -96px no-repeat;
+	}
+
+	.header .top_bar .bar_center .rt .mob{
+		width: 10px;
+	    height: 16px;
+	    margin-bottom: -3px;
+	    display: inline-block;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -136px -44px no-repeat;
+	}
+
+	.header .top_bar .bar_center .rt .sina{
+		margin-right: 10px;
+		width: 18px;
+	    height: 18px;
+	    float: right;
+	    margin-top: 8px;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) no-repeat;
+    	background-position: -109px -75px;
+	}
+
+	.header .top_bar .bar_center .rt .wechat{
+		margin-right: 10px;
+		width: 18px;
+	    height: 18px;
+	    float: right;
+	    margin-top: 8px;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) no-repeat;
+    	background-position: -89px -75px;
+	}
+
+
+	/* 头部 中间搜索部分 */
+
+	.header .center_main{
+		width: 100%;
+		height: auto;
+	}
+
+	.header .center_main .center_wrap{
+		width: 1190px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+
+	.header .center_main .center_wrap{
+		width: 1190px;
+		height: auto;
+		padding-top: 20px;
+		margin: 0 auto;
+	}
+	
+	/* LOGO部分 */
+
+	.header .center_main .center_wrap .logo{
+		width: 360px;
+		float: left;
+	}
+
+	.header .center_main .center_wrap .logo a{
+		display: inline-block;
+	}
+
+	.header .center_main .center_wrap .logo a img{
+		display: block;
+	}
+
+	/* 搜索框部分 */
+
+	.header .center_main .center_wrap .search_wrap{
+		float: left;
+		width: 540px;
+	}
+
+	.header .center_main .center_wrap .search_wrap .input_wrap{
+		width: 503px;
+	    height: 34px;
+	    border: 2px solid #d7063b;
+	    padding-left: 33px;
+	    position: relative;
+	}
+
+	.header .center_main .center_wrap .search_wrap .search_icon{
+		width: 21px;
+	    height: 21px;
+	    position: absolute;
+	    top: 7px;
+	    left: 8px;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) 0 -52px no-repeat;
+	}
+
+	.header .center_main .center_wrap .search_wrap #search_txt{
+		border: 0;
+		width: 395px;
+		padding: 5px;
+		height: 24px;
+		outline: 0;
+		font-size: 14px;
+	}
+
+	.header .center_main .center_wrap .search_wrap #search_btn{
+		border: 0;
+		outline: 0;
+		float: right;
+		width: 98px;
+		height: 34px;
+		background-color: #d7063b;
+		font-size: 18px;
+		color: #fff;
+		letter-spacing: 7px;
+		padding-left: 13px;
+		cursor: pointer;
+	}
+
+	/* 关键词 */
+
+	.header .center_main .center_wrap .search_wrap .point_words{
+		padding-top: 5px;
+	}
+
+	.header .center_main .center_wrap .search_wrap .point_words a{
+		margin-right: 5px;
+		color: #999;
+	}
+
+	.header .center_main .center_wrap .search_wrap .point_words a:hover{
+		color: #d7063b;
+		text-decoration: underline;
+	}
+
+	/* 右边 购物车 */
+
+	.header .center_main .center_wrap .rt_cart{
+		float: right;
+		margin-top: -3px;
+		margin-right: 30px;
+	}
+
+	.header .center_main .center_wrap .rt_cart #cart{
+		float: left;
+		width: 78px;
+		height: 43px;
+		border: 1px solid #ddd;
+		background-color: #e9e9e9;
+		text-align: center;
+		line-height: 43px;
+	}
+
+	.header .center_main .center_wrap .rt_cart .cart_wrap{
+		float: left;
+		width: 58px;
+		height: 45px;
+		background: #d7063b;
+		position: relative;
+		line-height: 45px;
+		text-align: center;
+		color: #fff;
+		padding-left: 6px;
+	}
+
+	.header .center_main .center_wrap .rt_cart .cart_wrap i{
+		width: 18px;
+	    height: 15px;
+	    position: absolute;
+	    top: 15px;
+	    left: 8px;
+	    margin-right: 3px;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -72px -96px no-repeat;
+	}
+
+	.header .center_main .center_wrap .rt_cart .cart_wrap span{
+		margin: 0 -2px
+	}
+
+	.header .center_main .center_wrap .rt_cart .cart_wrap #cart_num{
+		font-weight: bold;
+	}
+
+
+	/* 头部 底层商品分类 */
+
+	.header .center_main .bottom_wrap{
+		width: 1190px;
+		/* overflow: hidden; */
+		height: 40px;
+		margin: 0 auto;
+		margin-top: 12px;
+	}
+	
+	/* 商品分类 */
+
+	.header .center_main .bottom_wrap .goods_sort{
+		width: 190px;
+		height: 40px;
+		background: #d7063b;
+		float: left;
+		position: relative;
+	}
+
+	.header .center_main .bottom_wrap .goods_sort .sort_icon{
+		width: 16px;
+	    height: 10px;
+	    display: inline-block;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 15px;
+	    left: 10px;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) 0 -114px no-repeat;
+	}
+
+	.header .center_main .bottom_wrap .goods_sort .title{
+		height: 100%;
+		display: block;
+		color: #fff;
+		font-size: 14px;
+		line-height: 40px;
+		padding-left: 38px;
+		font-weight: bold;
+
+	}
+	
+	/* 商品列表 */
+
+	.header .center_main .bottom_wrap .good_list {
+		width: 100%;
+		background: rgba(248, 248, 248, 0.95);
+		padding: 2px 0;
+		position: absolute;
+		top: 40px;
+		height: 450px;
+		z-index: 9999;
+	}
+
+	.header .center_main .bottom_wrap .good_list .item{
+		height: 30px;
+		width: 182px;
+		line-height: 30px;
+		font-size: 13px;
+		padding-left: 8px;
+		transition: all .3s;
+	}
+
+	.header .center_main .bottom_wrap .good_list .item:hover{
+		background: #d7063b;
+		padding-left: 12px;
+		width: 178px;
+		
+	}
+
+	.header .center_main .bottom_wrap .good_list .item:hover a{
+		color: #fff;
+	}
+
+	.header .center_main .bottom_wrap .good_list .item i{
+		height: 30px;
+		width: 182px;
+		line-height: 30px;
+		font-size: 13px;
+		padding-left: 8px;
+	}
+
+	.header .center_main .bottom_wrap .hide_list{
+		display: none;
+		background: #fff;
+		position: absolute;
+		left: 189px;
+		top: 41px;
+		border: 1px solid #d7063b;
+		z-index: 9998;
+	}
+
+		.header .center_main .bottom_wrap .hide_list .hide_list_wrap{
+			width: 986px;
+		    min-height: 452px;
+		    padding-left: 14px;
+		    background-color: #fff;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap .col{
+			width: 236px;
+		    height: auto;
+		    padding: 0 14px 10px 0;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap .fl{
+			float: left;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap .brand{
+			width: 211px;
+		    height: 412px;
+		    padding: 20px 20px 20px 5px;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap dl{
+			width: 221px;
+		    height: auto;
+		    overflow: hidden;
+		    padding-top: 10px;
+		    padding-right: 15px;
+		    display: block;
+		    min-height: 1%;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap dl dt{
+			margin-left: 6px;
+		    border-bottom: 1px dotted #ddd;
+		    color: #666;
+		    font-weight: 700;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap dl dt a{
+			display: inline-block;
+		    line-height: 32px;
+		    color: #666;
+		    font-weight: 700;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap dl dd{
+			padding-top: 3px;
+		    width: 221px;
+		    height: auto;
+		    overflow: hidden;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap dl dd a{
+			margin: 11px 0 0 -1px;
+		    display: inline-block;
+		    line-height: 13px;
+		    float: left;
+		    padding: 0 6px;
+		    color: #666;
+		    border-left: 1px solid #DEDEDE;
+		    white-space: nowrap;
+		}
+
+
+		.header .center_main .bottom_wrap .hide_list_wrap ul{
+			width: auto;
+		    height: auto;
+		    border-left: 1px solid #DEDEDE;
+		    display: block;
+		    min-height: 1%;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap ul .lst{
+			float: left;
+		    width: 80px;
+		    height: 40px;
+		    padding: 5px 12px;
+		    margin-top: -1px;
+		    background-color: #F7F7F7;
+		    border-top: 1px solid #DEDEDE;
+		    border-bottom: 1px solid #DEDEDE;
+		    border-right: 1px solid #DEDEDE;
+		}
+
+		.header .center_main .bottom_wrap .hide_list_wrap ul .lst a{
+			display: block;
+		    overflow: hidden;
+		}
+
+		
+
+	/* 主导航 */
+
+	.header .center_main .bottom_wrap .main_nav{
+		height: 100%;
+		float: left;
+	}
+
+	.header .center_main .bottom_wrap .main_nav li{
+		float: left;
+		position: relative;
+		height: 100%;
+		line-height: 40px;
+	}
+
+	.header .center_main .bottom_wrap .main_nav li a{
+		display: block;
+		padding: 0 15px;
+		height: 100%;
+		font-size: 15px;
+		font-weight: 700;
+
+	}
+
+	.header .center_main .bottom_wrap .main_nav li .hot{
+		display: block;
+	    width: 27px;
+	    height: 18px;
+	    position: absolute;
+	    top: -7px;
+	    right: -2px;
+	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) no-repeat;
+        background-position: 0 -140px;
+	}
+
+
+	/* 右侧广告 */
+
+	.header .center_main .bottom_wrap .goods_ad{
+		float: right;
+		position: relative;
+		top: -25px;
+		right: 28px;
+	}
+
+
+/* banner */
+
+.banner{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+
+		/* 轮播图 */
+
+		.banner #scroll_wrap{
+			width: 100%;
+			height: auto;
+			position: relative;
+			height: 454px;
+		}
+ 
+		.banner #scroll_wrap li{
+			width: 100%;
+			height: auto;
+			position: absolute;
+			z-index: 0;
+		}
+
+		.banner #scroll_wrap li a{
+			width: 1190px;
+			height: 454px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.banner #scroll_wrap li a img{
+			margin-left: 190px;
+			float: left;
+		}
+
+		/* 轮播图小按钮 */
+
+		.banner #scroll_wrap #points_toggle{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%);
+			z-index: 9980;
+		}
+
+		.banner #scroll_wrap #points_toggle a{
+			width: 19px;
+		    height: 19px;
+		    line-height: 19px;
+		    text-align: center;
+		    display: inline-block;
+		    color: #fff;
+		    font-size: 14px;
+		    margin-right: 10px;
+		    border-radius: 50%;
+		    overflow: hidden;
+		    background: url(http://static02.fn-mart.com/product/images/index/fn_index.png?170725) 0 -141px no-repeat;
+		}
+
+		.banner #scroll_wrap .rt_click,.banner #scroll_wrap .lf_click{
+			width: 28px;
+			height: 62px;
+			position: absolute;
+			z-index: 9999;
+			color: #fff;
+			background: #000;
+			font-size: 22px;
+			line-height: 62px;
+			text-align: center;
+			top: 50%;
+			transform: translate(0,-50%);
+			opacity: 0.3;
+			display: none;
+			cursor: pointer;
+		}
+
+		.banner #scroll_wrap .lf_click{
+			left: 318px;
+		}
+
+		.banner #scroll_wrap .rt_click{
+			right: 330px;
+		}
+
+		/* 右侧功能区域 */
+		.banner .rt_bar{
+			width: 200px;
+			height: 434px;
+			background: #f9f9f9;
+			position: absolute;
+			z-index: 9980;
+			left:50%;
+			top: 10px;
+			margin-left: 395px;
+			opacity: .95;
+		}
+
+		.banner .rt_bar .bar_sort{
+			width: 100%;
+			float: left;
+			height: 87px;
+		}
+
+		.banner .rt_bar .bar_sort li{
+			float: left;
+			padding-left: 5px;
+			padding-top: 10px;
+		}
+
+		.banner .rt_bar .bar_sort a{
+			display: inline-block;
+			width: 60px;
+			height: 73px;
+			text-align: center;
+		}
+
+		.banner .rt_bar .bar_sort a:hover p{
+			color: #d7063b;
+		}
+
+		.banner .rt_bar .bar_sort li img{
+			display: inline-block;
+		}
+
+		.banner .rt_bar .events{
+			border-top: 1px solid #ddd;
+			width: 190px;
+		    height: 44px;
+		    padding: 7px 0 7px 10px;
+		    overflow: hidden;
+		}
+		
+		.banner .rt_bar .events p{
+			width: 190px;
+		    overflow: hidden;
+		    height: 22px;
+		    line-height: 22px;
+		}
+
+
+		/* 充值区域 */
+
+		.banner .rt_bar .mid_slide {
+			border-top: 1px solid #ddd;
+			width: 100%;
+		    position: relative;
+		    height: 174px;
+		}
+
+		.banner .rt_bar .mid_slide li{
+			float: left;
+			display: block;
+		    height: 27px;
+		    line-height: 28px;
+		    text-align: center;
+		    font-size: 12px;
+		    color: #333;
+		    font-family: "Microsoft YaHei";
+		    width: 99px;
+		    border-left: 1px solid #ddd;
+		    border-bottom: 1px solid #ddd;
+		    cursor: pointer;
+		}
+
+		.banner .rt_bar .mid_slide .charging_active{
+			color: #d7063b;
+		    line-height: 24px;
+		    height: 26px;
+		    border-top: 2px solid #d7063b;
+		    border-bottom: 0 none;
+		}
+
+		.banner .rt_bar .mid_slide .ph_money,.banner .rt_bar .mid_slide .liu_money{
+			position: absolute;
+			top: 28px;
+			width: 180px;
+			padding: 10px 10px 0 10px;
+			height: 135px;
+		}
+
+		.banner .rt_bar .mid_slide input{
+			width: 173px;
+			height: 14px;
+			border: 1px solid #dedede;
+		    background: #fff;
+		    position: relative;
+		    font-size: 12px;
+		    font-family: "Microsoft YaHei";
+		    color: #3c3c3c;
+		    padding: 5px 0 5px 5px;
+		    outline: 0;
+		    border-bottom: 0;
+		}
+
+		.banner .rt_bar .mid_slide p{
+			width: 173px;
+		    height: 14px;
+		    border: 1px solid #dedede;
+		    background: #fff;
+		    position: relative;
+		    font-size: 12px;
+		    padding: 5px 0 5px 5px;
+		    font-family: "Microsoft YaHei";
+		    
+		}
+
+		.banner .rt_bar .mid_slide .num_type{
+			display: block;
+			cursor: pointer;
+		}
+
+		.banner .rt_bar .mid_slide i{
+			display: block;
+		    width: 7px;
+		    height: 7px;
+		    position: absolute;
+		    top: 8px;
+		    right: 7px;
+		    background: url(http://static02.fn-mart.com/product/images/index/fn_index.png?170725) -29px -162px no-repeat;
+		    cursor: pointer;
+		}
+
+		.banner .rt_bar .mid_slide .selector{
+			width: 180px;
+			height: 125px;
+			max-height: 130px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			position: absolute;
+			z-index: 9999;
+			background: #fff;
+			border: 1px solid #aaa;
+			display: none;
+		}
+
+		.banner .rt_bar .mid_slide .selector li{
+			width: 180px;
+			height: 20px;
+			text-align: left;
+			padding: 5px 0 5px 10px;
+			line-height: 20px;
+			border: 0;
+			color: #000;
+		}
+
+		.banner .rt_bar .mid_slide .selector li a{
+			color: #000;
+		}
+
+		.banner .rt_bar .mid_slide .selector .li_active{
+			background: #ffece5;
+		}
+
+		.banner .rt_bar .mid_slide .price_wrap{
+			margin-top: 6px;
+			display: block;
+			color: #999;
+		}
+		
+		.banner .rt_bar .mid_slide .price_wrap span{
+			color: #d7063b;
+		}
+
+		.banner .rt_bar .mid_slide .tip{
+			width: 180px;
+		    height: 18px;
+		    font-size: 12px;
+		    font-family: "Microsoft YaHei";
+		}
+
+		.banner .rt_bar .mid_slide .charging_btn{
+			border: 0;
+			display: block;
+		    width: 80px;
+		    height: 28px;
+		    line-height: 28px;
+		    text-align: center;
+		    font-size: 12px;
+		    color: #fff;
+		    font-family: "Microsoft YaHei";
+		    background: #d7063b;
+		    margin-top: 2px;
+		}
+
+		.banner .rt_bar .hotsale{
+			opacity: 0.8
+		}
+		
+
+		
+
+		
+
+
+		
+
+	
+
+
+
+
+
+/* channel部分 */
+
+.channel{
+	width: 100%;
+	margin-top: 10px;
+}
+
+	.channel .ch_wrap{
+		width: 1190px;
+		/* height: 100px; */
+		margin: 0 auto;
+	}
+
+	.channel .ch_wrap h3{
+		color: #999999;
+		height: 40px;
+	    line-height: 40px;
+	    text-align: center;
+	    font-size: 24px;
+	    /* color: #2976FA; */
+	    font-weight: 700;
+	    font-family: "Microsoft YaHei";
+	}
+
+	.channel .ch_wrap ul{
+		width: 1250px;
+		margin-top: 13px;
+	}
+
+		.channel .ch_wrap ul a{
+			margin-right: 12px;
+		}
+
+	.channel .ch_wrap div{
+		margin-top: 30px;
+	}
+
+
+/* 悬浮层部分 */
+.fix_search{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: #333;
+	z-index: 99999;
+	display: none;
+}
+
+	.fix_search .fix_wrap{
+		width: 1190px;
+		height: 50px;
+		margin: 0 auto;
+		background: #333;
+		line-height: 50px;
+	}
+		
+		/* LOGO */
+
+		.fix_search .fix_wrap .fix_logo{
+			width: 300px;
+			height: 100%;
+			float: left;
+		}
+
+		.fix_search .fix_wrap .fix_logo a{
+			display: block;
+			height: 50px;
+			line-height: 50px;
+		}
+
+		.fix_search .fix_wrap .fix_logo img{
+			float: left;
+			margin-top: 5px;
+		}
+
+		/* 搜索框 */
+
+		.fix_search .fix_wrap form{
+			float: left;
+			margin-top: 5px;
+		}
+	
+		.fix_search .fix_wrap .input_wrap{
+			width: 503px;
+		    height: 34px;
+		    border: 2px solid #d7063b;
+		    padding-left: 33px;
+		    position: relative;
+		    background: #fff;
+		}
+
+		.fix_search .fix_wrap .search_icon{
+			width: 21px;
+		    height: 21px;
+		    position: absolute;
+		    top: 7px;
+		    left: 8px;
+		    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) 0 -52px no-repeat;
+		}
+
+		.fix_search .fix_wrap #fix_search_txt{
+			border: 0;
+			width: 395px;
+			padding: 5px;
+			height: 24px;
+			outline: 0;
+			font-size: 14px;
+			float: left;
+		}
+
+		.fix_search .fix_wrap #fix_search_btn{
+			border: 0;
+			outline: 0;
+			float: right;
+			width: 98px;
+			height: 34px;
+			background-color: #d7063b;
+			font-size: 18px;
+			color: #fff;
+			letter-spacing: 7px;
+			padding-left: 15px;
+			cursor: pointer;
+		}
+
+/* 右侧悬浮 */
+.fix_rt{
+	width: 315px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: -280px;
+	background: #000;
+	z-index: 999999;
+	display: none;
+}
+	
+	.fix_rt .fix_rt_bar{
+		width: 35px;
+		height: 100%;
+		float: left;
+		position: absolute;
+	}
+
+		.fix_rt .fix_rt_top{
+			width: 35px;
+			height: 255px;
+			/* float: left; */
+			display: block;
+			position: relative;
+		}
+
+		.fix_rt .fix_rt_top a{
+			display: block;
+			width: 360px;
+			height: 200px;
+			margin-left: -45px;
+		}
+
+		.fix_rt .fix_rt_top .fix_bg{
+			width: 80px;
+		    height: 55px;
+		    display: block;
+		    overflow: hidden;
+		    position: absolute;
+		    bottom: 0;
+		    right: 0;
+		    background: url(http://static02.fn-mart.com/product/images/index/fn_index.png?170725) -124px 0 no-repeat;
+		}
+
+		.fix_rt .fix_rt_mid{
+			height: 307px;
+			top: 255px;
+			width: 35px;
+		    position: absolute;
+		    display: block;
+		    left: 0;
+		}
+		.fix_rt .fix_rt_mid .my_cart{
+			height: 117px;
+			float: left;
+			margin-bottom: 10px;
+			text-align: center;
+			width: 35px;
+		    position: relative;
+		    cursor: pointer;
+		    background: #d7063b;
+		    /* z-index: 90; */
+		}
+
+		.fix_rt .fix_rt_mid .my_cart a{
+			display: block;
+		}
+
+		.fix_rt .fix_rt_mid .my_cart a .cart_icon{
+			line-height: 32px;
+		    display: block;
+		    font-size: 18px;
+		    vertical-align: middle;
+		    z-index: 2;
+		    width: 25px;
+		    position: relative;
+		    cursor: pointer;
+		    height: 32px;
+		    margin: 0 auto;
+		    margin-top: 3px;
+		}
+
+		.fix_rt .fix_rt_mid .my_cart a span:nth-child(2){
+			display: block;
+		    width: 20px;
+		    color: #fff;
+		    font-size: 12px;
+		    line-height: 14px;
+		    cursor: pointer;
+			   margin: 0 auto;
+		}
+
+		.fix_rt .fix_rt_mid .my_cart a span:nth-child(3){
+			background: #fff;
+		    color: #d7063b;
+		    min-width: 14px;
+		    height: 20px;
+		    line-height: 20px;
+		    font-size: 12px;
+		    display: inline-block;
+		    padding: 0 3px;
+		    -moz-border-radius: 10px;
+		    -webkit-border-radius: 10px;
+		    border-radius: 10px;
+		    margin-top: 10px;
+		    cursor: pointer;
+		}
+
+		.fix_rt .fix_rt_mid ul{
+			position: relative;
+			z-index: 50;
+		}
+
+		.fix_rt .fix_rt_mid ul li{
+			position: relative;
+			left: 0;
+			width: 35px;
+			height: 35px;
+			margin-bottom: 10px;
+			clear: both;
+			z-index: 50;
+			
+		}
+
+		.fix_rt .fix_rt_mid ul li:not(.my_cart) a{
+			display: block;
+			height: 100%;
+			background: #000;
+		}
+
+		.fix_rt .fix_rt_mid ul li:not(.my_cart) svg{
+			width: 20px;
+			height: 20px;
+			display: block;
+			margin: 0 auto;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+			z-index: 6;
+		}
+
+		.fix_rt .fix_rt_mid ul li .rt_hide{
+			width: 90px;
+			height: 35px;
+			position: absolute;
+			right: -90px;
+			top: 0;
+			color: #fff;
+			background: rgb(199,0,52);
+			text-align: center;
+			line-height: 35px;
+			z-index: -1;
+		}
+
+		.fix_rt .fix_rt_bot{
+			position: absolute;
+			bottom: 0;
+			height: 80px;
+			width: 35px;
+			z-index: 1000;
+		}
+
+		.fix_rt .fix_rt_bot ul li{
+			position: relative;
+			width: 35px;
+			height: 35px;
+			margin-bottom: 10px;
+			clear: both;
+			background: #333;
+			line-height: 35px;
+			z-index: 50;
+		}
+		
+		.fix_rt .fix_rt_bot ul li:hover i{
+			background-color: #d7063b;
+		}
+		.fix_rt .fix_rt_bot ul li a{
+			display: block;
+			height: 100%;
+			background: #333;
+		}
+
+		.fix_rt .fix_rt_bot ul li svg{
+			width: 20px;
+			height: 20px;
+			display: block;
+			margin: 0 auto;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			z-index: 5;
+		}
+
+		.fix_rt .fix_rt_bot ul li .rt_hide{
+			width: 90px;
+			height: 35px;
+			position: absolute;
+			right: -90px;
+			top: 0;
+			color: #fff;
+			background: rgb(199,0,52);
+			text-align: center;
+			line-height: 35px;
+			z-index: -1;
+		}
+
+		.fix_rt .fix_rt_bot ul li i{
+			display: block;
+		    width: 35px;
+		    height: 35px;
+		    position: relative;
+		    /* z-index: 2; */
+		    cursor: pointer;
+		    background: url(http://static02.fn-mart.com/product/images/index/fn_index.png?170725) -159px -57px no-repeat #666;
+		}
+
+
+		
+
+	.fix_rt .fix_cart{
+		width: 280px;
+		height: 100%;
+		position: absolute;
+	    top: 200px;
+	    left: 35px;
+	    background: #fff;
+	    border-top: 7px solid #000;
+	    z-index: 1001;
+	
+	}
+
+		.fix_rt .fix_cart .cart_title{
+			height: 39px;
+			line-height: 39px;
+			background-color: #E9E9E9;
+			border-bottom: 1px solid #DEDEDE;
+			position: relative;
+			padding-left: 15px;
+		}
+		
+		.fix_rt .fix_cart .cart_title a{
+			display: inline-block;
+		    color: #333;
+		    font-size: 14px;
+		    font-weight: 700;
+		}
+
+		.fix_rt .fix_cart .cart_title i{
+			width: 10px;
+		    height: 10px;
+		    overflow: hidden;
+		    display: inline-block;
+		    background: url(http://static02.fn-mart.com/product/images/index/fn_index.png?170725) -188px -94px no-repeat;
+		    position: absolute;
+		    top: 14px;
+		    right: 15px;
+		    cursor: pointer;
+		}
+		
+
+		.fix_rt .fix_cart .min_pic{
+			width: auto;
+		    height: 80px;
+		    line-height: 80px;
+		    text-align: center;
+		}
+		
+
+		.fix_rt .fix_cart .min_pic span{
+			display: inline-block;
+			color: #999;
+			font-size: 12px;
+			padding-left: 67px;
+			position: relative;
+			display: block;
+		}
+
+		.fix_rt .fix_cart .min_pic span i{
+			display: inline-block;
+		    width: 50px;
+		    height: 50px;
+		    background: url(http://static01.fn-mart.com/product/images/index/fn_g_header.png?170725) no-repeat;
+		    position: absolute;
+		    top: 12px;
+		    left: 45px;
+		}
+
+
+
+/* 楼层区域 */
+
+.mid_wrap{
+	width: 100%;
+	margin-top: 25px;
+	height: 100%;
+}
+
+	.mid_wrap .mid_block_food{
+		width: 1190px;
+		height: 100%;
+		margin: 0 auto;
+		height: 524px;
+		background: url(http://static02.fn-mart.com/product/images/index/feiniu.gif?170725) center center no-repeat;
+	}
+
+		.mid_wrap .mid_block_food .block_top{
+			width: 100%;
+			height: 36px;
+			border-bottom: 1px solid #d7063b;
+		}
+
+		.mid_wrap .mid_block_food .block_top .food_title{
+			float: left;
+			font-size: 20px;
+		}
+
+		.floor_index{
+			font-size: 14px;
+		    color: #fff;
+		    text-align: center;
+		    width: 30px;
+		    height: 25px;
+		    line-height: 21px;
+		    float: left;
+		    overflow: hidden;
+		    /* transition: all .5s; */
+		    margin-top: 4px;
+		    margin-right: 4px;
+		    background: url(http://static01.fn-mart.com/product/images/index/fn_index.png?170725) -124px -94px no-repeat;
+		}
+	
+	.mid_wrap .mid_block_food .block_top ul{
+		float: right;
+		border: 1px solid #E9E9E9;
+		border-bottom: 1px solid #d7063b;
+	}
+
+	.mid_wrap .mid_block_food .block_top ul li{
+		float: left;
+		width: 120px;
+		height: 35px;
+		text-align: center;
+		line-height: 35px;
+		position: relative;
+
+	}
+
+	.mid_wrap .mid_block_food .block_top ul .acti a{
+		width: 119px;
+	    height: 36px;
+	    line-height: 36px;
+	    color: #d7063b;
+	    font-weight: 700;
+	    position: absolute;
+	    /* text-indent: 2px; */
+	    top: -1px;
+	    border: 1px solid #d7063b;
+	    border-bottom: none;
+	    left: -1px;
+	    background-color: #fff;
+    	overflow: hidden;
+    	display: inline-block;
+	}
+
+	.mid_wrap .mid_block_food .block_top ul .acti span{
+		display: none;
+	}
+
+		.mid_wrap .mid_block_food .block_top ul li a{
+			float: left;
+			color: #666;
+			
+			display: block;
+			width: 100%;
+
+		}
+
+		.mid_wrap .mid_block_food .block_top ul li span{
+			width: 1px;
+		    height: 16px;
+		    display: inline-block;
+		    background-color: #E9E9E9;
+		    position: absolute;
+		    right: 0;
+		    top: 10px;
+		}
+
+	.mid_wrap .mid_block_food .food_mid_lf{
+		float: left;
+		width: 190px;
+		height: 488px;
+		position:relative;
+	}
+
+		.mid_wrap .mid_block_food .food_mid_lf .mid_lf_bg a{
+			display: block;
+		}
+
+		.mid_wrap .mid_block_food .food_mid_lf ul{
+			position: absolute;
+			top: 244px;
+			background: rgba(255,255,255,.5);
+			width: 170px;
+		    height: 46px;
+		    padding: 8px 10px;
+		}
+
+		.mid_wrap .mid_block_food .food_mid_lf ul li{
+		    line-height: 23px;
+		    width: 150px;
+		    margin: 0 10px;
+		    white-space: nowrap;
+		    font-size: 12px;
+		    overflow: hidden;
+		    float: left;
+		}
+
+		.mid_wrap .mid_block_food .food_mid_lf ul li a{ 
+			color: #666;
+		    
+		}
+
+		.mid_wrap .mid_block_food .food_mid_lf p{ 
+			width: 170px;
+		    height: 173px;
+		    padding: 9px 10px 0;
+		    font-size: 0;
+		    position: absolute;
+		    bottom: 0;
+		    background: rgba(255,255,255,.7);
+		    overflow: hidden;
+		    text-align: left;
+		}
+		
+		.mid_wrap .mid_block_food .food_mid_lf p a{
+			display: inline-block !important;
+			width: 36px;
+		    color: #666;
+		    font-size: 12px;
+		    margin: 0 7px;
+		    line-height: 27px;
+		    /* max-width: 36px; */
+		    overflow: hidden;
+		    white-space: nowrap;
+		    text-align: center;
+		}
+
+	.mid_wrap .mid_block_food .block_mid_main{
+		position: relative;
+		float: left;
+		width: 1000px;
+		height: 488px;
+		z-index: 10;
+		background: #fff;
+	}
+	
+	.mid_wrap .mid_block_food .block_mid_main>li{
+		position: absolute;
+		left: 0;
+		display: none;
+		
+	}	
+		.mid_wrap .mid_block_food .block_mid_main .list1_ctx{
+			/* display: none; */
+			width: 100%;
+		}
+
+		.mid_wrap .mid_block_food .block_mid_main .list1_ctx li div:first-child{
+			border-bottom: 1px solid #E9E9E9;
+			height: 100%;
+		}
+		
+		.mid_wrap .mid_block_food .block_mid_main .list1_ctx li a{
+			display: block;
+		}
+
+		.mid_wrap .mid_block_food .block_mid_main .list1_ctx li img{
+			display: block;
+		}
+
+		.mid_wrap .mid_block_food .block_mid_main .list1_ctx li{
+			float: left;
+			border-right: 1px solid #E9E9E9;
+		    border-bottom: 1px solid #E9E9E9;
+		}
+		
+
+		/* 普通商品 */
+
+		.mid_wrap .mid_block_food .block_mid_main .list_ctx{
+			width: 100%;
+		}
+
+		.mid_wrap .mid_block_food .block_mid_main .list_ctx li{
+			float: left;
+			width: 160px;
+			height: 233px;
+			padding: 10px 19px 0 20px;
+			border-right: 1px solid #E9E9E9;
+		    border-bottom: 1px solid #E9E9E9;
+		    overflow: hidden;
+		}
+
+		.mid_wrap .mid_block_food .block_mid_main .list_ctx li p{
+			height: 36px;
+		}
+
+		.mid_wrap .mid_block_food .block_mid_main .list_ctx li .goods_price{
+			font-size: 16px;
+		    color: #d7063b;
+		    font-weight: 700;
+		}
+
+
+
+.mid_wrap .brand_wrap{
+	width: 1190px;
+	margin: 0 auto;
+	height: 30px;
+    padding: 15px 0;
+    background-color: #FBFBFB;
+    margin-top: 10px;
+}
+
+	.mid_wrap .brand_wrap ul{
+		overflow: hidden;
+	}
+
+	.mid_wrap .brand_wrap ul li{
+		    float: left;
+		    width: 118px;
+		    height: 30px;
+		    text-align: center;
+	}
+
+	.mid_wrap .brand_wrap ul li:not(.first_li){
+		    border-left: 1px dotted #ccc; 
+	}
+
+	.mid_wrap .brand_wrap ul li a{
+		   width: 100px;
+		    height: 30px;
+		    display: inline-block;
+	}
