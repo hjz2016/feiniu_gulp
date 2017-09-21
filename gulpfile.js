@@ -16,10 +16,10 @@ const sass = require('gulp-sass');
 		// 连缀调用gulp方法 gulp.pipe()
 		// 转存文件位置 gulp.dest()
 		// 
-		gulp.src("src/sass/*.scss")
+		gulp.src("src/sass/**/*")
 			.pipe(sass().on('error',sass.logError))
 			.pipe(gulp.dest('dist/sass'));
-		return gulp.src(['src/**/*','!src/sass/*'])
+		return gulp.src(['src/**/*','!src/sass/**/*'])
 				   .pipe(gulp.dest('dist'))
 				   .pipe(connect.reload())
 				  
@@ -30,8 +30,8 @@ const sass = require('gulp-sass');
 
 	gulp.task('watch',()=>{
 		// 如果src内文件发生改变 触发index方法
-		gulp.watch(['src/**/*','!src/sass/*'],['build']);
-		gulp.watch("src/sass/*.scss",["sass"]);
+		gulp.watch(['src/**/*','!src/sass/**/*'],['build']);
+		gulp.watch("src/sass/**/*",["sass"]);
 	})
 
 gulp.task('server',()=>{
@@ -43,7 +43,7 @@ gulp.task('server',()=>{
 });
 
 gulp.task('sass',()=>{
-	return gulp.src('src/sass/*.scss')
+	return gulp.src('src/sass/**/*')
 			   .pipe(sass().on('error',sass.logError))
 			   .pipe(gulp.dest('dist/sass'));
 })
