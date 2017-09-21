@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录飞牛网</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="sass/login/login-header.css">
+<link rel="stylesheet" href="sass/login/login-bottom.css">
+<link rel="stylesheet" href="sass/login/login-mid.css">
+<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+<script src='libs/require.js'></script>
+
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="login_header">
+    	<a href="http://www.feiniu.com/" class="logo" title="回飞牛网首页"></a>
+	</div>
+	<!-- 中部登录 -->
+	<div class="m_login" style="background-color: #e9e9e9;" id="divMLogin">
+	    <div class="login_wrap">
+	        <div class="banner">
+	            <a href="http://sale.feiniu.com/activity-656357612731420.html" id="aBanner">
+	                <img id="aBannerImg" src="https://img.feiniu.com/pic/26a2133e84ad1b3a372f/BzHznn5T_2tlKguMj2/79oaSRvGBRQaQ9/CsmRslm_OkuAOmfnAADjzPqb3PI764.jpg"></a>
+	        </div>
+	        <div class="login_form">
+	            <div id="login_tip_id" class="login_tip_cls">
+	                <em></em>
+	                <span></span>
+	                <p>扫码登录更安全</p>
+	            </div>
+	            <div class="login_tip_logo">
+	                <em></em>
+	                <a class="login_qrcode" href="javascript:;"></a>
+	                <a class="login_pc" href="javascript:;"></a>
+	            </div>
+	            <div id="pc_login_id" class="pc_login_cls">
+	                <div class="title oh">
+	                    <h1 class="fl">登录飞牛网</h1>
+	                    <div class="regist_link fr hide account_login">
+	                        <a href="javascript:;">
+	                            <i></i>
+	                            <span>帐号密码登录</span>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="msg_wrap">
+	                    <div class="msg msg_warn" style="display:none;">
+	                        <i></i>
+	                        <span class="warnMsg">公共场所不建议自动登录，以防帐号丢失</span>
+	                    </div>
+	                    <div class="msg msg_err" style="display:none;">
+	                        <i></i>
+	                        <span class="errorMsg"></span>
+	                    </div>
+	                </div>
+	                <form class="login_form_inner">
+	                    <div class="input_item mb20">
+	                        <label class="label_item username "></label>
+	                        <input type="text" class="txt_item " value="" placeholder="邮箱/用户名/手机号" name="username" autocomplete="off">
+	                    </div>
+	                    <input type="hidden">
+	                    <div class="input_item mb20">
+	                        <label class="label_item password"></label>
+	                        <input type="password" class="txt_item" placeholder="密码" name="password" autocomplete="off">
+							<!-- <span id="capspwd" class="u-caps-warming">
+								<em></em>
+								<span></span>键盘大写锁定开启
+							</span> -->
+	                    </div>
+	                    <div class="login_safe">
+							<span class="auto">
+								<label>
+									<input type="checkbox" class="auto_login" name="rememberMe">自动登录
+								</label>
+							</span>
+	                        <span class="forget">
+	                        	<a class="under" href="https://i.feiniu.com/lostPwd/fillname">忘记密码？</a>
+	                        </span>
+	                    </div>
+	                    <div class="input_item u-authcode mt10" id="logincaptcha" style="display: none">
+	                        <input type="text" class="txt_item mr10 J-input-auth u-txt-err" placeholder="验证码" name="authcode" maxlength="4">
+	                        <img id="vcode" src="" class="code-img mr10 vcode">
+	                        <span>看不清?<a href="javascript:;" class="cpcchang">换一张</a></span>
+	                    </div>
+	                    <div class="login_btn">
+	                        <a href="javascript:;" class="J-login-submit" name="sbtbutton">登&nbsp;&nbsp;&nbsp;录</a>
+	                    </div>
+	                </form>
+	                <form id="login_mobile" >
+	                    <div class="input_item mb10">
+	                        <label class="label_item u-phone"></label>
+	                        <input type="text" class="txt_item J-input-txt" placeholder="手机号" name="mobilephone" autocomplete="off">
+	                    </div>
+	                    <div class="input_item u-authcode" id="logincaptchaMsg">
+	                        <input type="text" class="txt_item mr10 J-input-auth" placeholder="图形验证码" name="imgcode" maxlength="4">
+	                        <img src="https://passport.feiniu.com/dovcode/getVcodeL" class="code-img mr10 vcode">
+	                        <span>看不清?<a href="javascript:;" class="cpcchang">换一张</a></span>
+	                    </div>
+	                    <div class="input_item mb20 mt20">
+	                        <label class="label_item u-pwd"></label>
+	                        <input type="text" class="txt_item J-input-txt J-cap-lock" placeholder="手机验证码" name="authcode" autocomplete="off">
+	                        <a href="javascript:;" class="get-code J-get-code">获取验证码</a>
+	                    </div>
+	                    <div class="u-safe">
+								<span class="auto">
+									<label><input type="checkbox" class="u-ckb J-auto-rmb" name="chkRememberMe">自动登录</label>
+								</span>
+	                        <span class="forget"><a href="https://i.feiniu.com/lostPwd/fillname">忘记密码了？</a></span>
+	                    </div>
+
+	                    <div class="u-btn mb20 mt20">
+	                        <a href="javascript:;" class="J-mobile-submit" name="">登&nbsp;&nbsp;&nbsp;录</a>
+	                    </div>
+	                </form>
+	                <div class="login_routes">
+	                    <div class="mobile">
+	                        <a href="javascript:;" class="item">
+	                            <i class="icon_phone"></i>
+	                            <span>手机验证码登录</span>
+	                        </a>
+	                        <a href="https://reg.feiniu.com/gateway/register" class="item text_right">
+	                            <i class="icon_arrow"></i>
+	                            <span>免费注册</span>
+	                        </a>
+	                    </div>
+	                    <dl class="account">
+	                        <dt class="mr10">合作网站登录:</dt>
+	                        <dd><a href="https://passport.feiniu.com/thirdLogin/qq/login?referer=aHR0cDovL3d3dy5mZWluaXUuY29tLw==" class="qq" title="QQ"></a></dd>
+	                        <dd><a href="https://passport.feiniu.com/thirdLogin/wechat/login?referer=aHR0cDovL3d3dy5mZWluaXUuY29tLw==" class="wechat" title="微信"></a></dd>
+	                    </dl>
+	                </div>
+	            </div>
+	            <div id="J-qr-login" class="m-login-qr hide" style='display: none;'>
+	                <div id="g-qr-body" class="g-qr-body ">
+	                    <h2>用飞牛网APP，扫一扫安全登录</h2>
+	                    <div class="qr-ct">
+	                        <div class="qr-code">
+	                            <img id="qrCodeImg" src="" alt="扫二维码登录飞牛网">
+	                            <div id="J-qr-loginerr" class="err-msg hide">
+	                                <div class="mask"></div>
+	                                <div class="m-tip">
+	                                    <p class="tip">登录失败</p>
+	                                    <p>
+	                                        <a class="btn-refresh" id="J-refresh-qrcode" href="javascript:;">刷新</a>
+	                                    </p>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="msg">
+	                            <p>打开新版<a href="http://sale.feiniu.com/activity-789.html?tp=www.0.1000-fnphone.2.1462848890058WN9O" target="_blank">飞牛APP</a>扫描二维码</p>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div id="J-scan-success" class="g-qr-success hide">
+	                    <div class="icon-s"></div>
+	                    <p class="xs">扫描成功</p>
+	                    <p>请勿刷新本页，按手机提示操作</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!-- 底部 -->
+	<div class="login_bottom"></div>
+	<script>
+		// 加载登录页面模块
+		require(['js/login/main.js']);
+	</script>
+</body>
+</html>

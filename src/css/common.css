@@ -105,10 +105,10 @@
 	.header .top_bar .bar_center .lf li .arrow{
 		width: 7px;
 	    height: 4px;
-	    top: 16px;
-	    right: -10px;
-	    position: absolute;
-
+	    display: inline-block;
+	   	position: relative;
+	   	top: -2px;
+	   	transition: all .5s;
 	    background: url(http://static02.fn-mart.com/product/images/index/fn_g_header.png?170725) -140px -28px no-repeat;
 	}
 

@@ -1,0 +1,413 @@
+.under:hover{
+	text-decoration: underline !important;
+}
+
+@mixin mb20{
+	margin-bottom: 20px;
+}
+
+@mixin mt20{
+	margin-top: 20px;
+}
+
+@mixin mr10{
+	margin-right: 10px;
+}
+
+// 中部登录
+.m_login{
+	width: 100%;
+    min-width: 1190px;
+    height: 495px;
+    margin-bottom: 30px;
+    font-family: "Microsoft YaHei";
+
+    .login_wrap{
+    	width: 1190px;
+	    padding: 40px 0px 0 0;
+	    margin: 0 auto;
+
+	    .banner{
+	    	float: left;
+		    width: 660px;
+		    height: 359px;
+	    }
+
+	    .login_form{
+	    	position: relative;
+		    float: right;
+		    width: 305px;
+		    height: 365px;
+		    padding: 20px 20px 0 20px;
+		    margin-right: 135px;
+		    background-color: #fff;
+
+		    .login_tip_cls{
+		    	position: absolute;
+			    left: 178px;
+			    top: 5px;
+			    padding: 1px 10px;
+			    color: #666666;
+			    border: 1px solid #ffd8a4;
+			    background-color: #fffdee;
+
+			    em{
+			    	border-color: transparent transparent transparent #ffd8a4;
+				    border-width: 5px;
+				    left: 105px;
+				    top: 5px;
+				    border-style: solid;
+				    width: 0;
+				    position: absolute;
+				    z-index: 1;
+			    }
+
+			    span{
+			    	border-color: transparent transparent transparent #fff;
+				    border-width: 5px;
+				    border-style: solid;
+				    height: 0;
+				    left: 104px;
+				    top: 5px;
+				    overflow: hidden;
+				    position: absolute;
+				    width: 0;
+				    z-index: 1;
+			    }
+		    }
+
+		    .login_tip_logo{
+		    	position: absolute;
+			    right: 0;
+			    top: 0;
+			    line-height: 0;
+
+			    em{
+			    	display: inline-block;
+				    _display: none;
+				    display: none\9;
+				    position: absolute;
+				    right: 17px;
+				    bottom: -45px;
+				    width: 0;
+				    height: 0;
+				    overflow: hidden;
+				    border: 44px solid transparent;
+				    border-right-color: #fff;
+				    transform: rotate(315deg);
+				    -ms-transform: rotate(315deg);
+				    -moz-transform: rotate(315deg);
+				    -webkit-transform: rotate(315deg);
+			    }
+
+			    a{
+			    	display: inline-block;
+				    width: 61px;
+				    height: 61px;
+			    }
+
+			    .login_qrcode{
+			    	background: url(https://static02.fn-mart.com/images/member/login-qr.png?170726) no-repeat;
+			    }
+
+			    .login_pc{
+			    	display: none;
+				    background: url(https://static02.fn-mart.com/images/member/login-pc.png?170726) no-repeat;
+			    }
+		    }
+
+		    .pc_login_cls{
+		    	display: block;
+
+		    	.title{
+		    		height: 21px;
+
+		    		.fl{
+						float: left;
+		    		}
+
+		    		h1{
+		    			font-size: 16px;
+					    color: #666;
+		    		}
+
+		    		.regist_link{
+		    			height: 20px;
+					    margin-top: 2px;
+
+					    a{
+					    	line-height: 18px;
+						    font-size: 14px;
+						    color: #d7063b;
+
+						    i{
+						    	display: inline-block;
+							    width: 15px;
+							    height: 18px;
+							    background: url(https://static02.fn-mart.com/images/member/dialog-login.png?170726) no-repeat -75px -40px;
+						    }
+					    }
+		    		}
+
+		    		.hide{
+		    			display: none;
+		    		}
+
+		    		.fr{
+		    			float: right;
+		    		}
+		    	}
+
+		    	.msg_wrap{
+		    		height: 24px;
+				    line-height: 24px;
+				    padding: 16px 0 7px;
+
+				    .msg{
+				    	height: 24px;
+					    line-height: 24px;
+					    padding: 0 10px 0 30px;
+					    position: relative;
+					    color: #d7063b;
+
+					    i{
+					    	display: block;
+						    width: 15px;
+						    height: 15px;
+						    position: absolute;
+						    left: 10px;
+						    top: 50%;
+						    margin-top: -7px;
+					    }
+
+					    .msg_warn{
+					    	border: 1px solid #ffe9b1;
+						    background: #fff4d8;
+
+						    i{
+						    	background: url(https://static02.fn-mart.com/images/member/fn-icon.png?170726) no-repeat 0 0;
+						    }
+					    }
+
+					    .msg_err{
+					    	border: 1px solid #ffbdbe;
+						    background: #ffebeb;
+
+						    i{
+						    	background: url(https://static02.fn-mart.com/images/member/fn-icon.png?170726) no-repeat 0 -40px;
+						    }
+					    }
+				    }
+		    	}
+
+		    	.login_form_inner{
+		    		.input_item{
+		    			position: relative;
+
+		    			.label_item{
+		    				width: 41px;
+						    height: 38px;
+						    border-right: 1px solid #eee;
+						    position: absolute;
+						    left: 1px;
+						    top: 1px;
+
+						    
+		    			}
+						
+
+
+		    			.username{
+					    	background: url(https://static02.fn-mart.com/images/member/dialog-login.png?170726) no-repeat 0 0;
+					    }
+
+					    .password{
+					    	background: url(https://static02.fn-mart.com/images/member/dialog-login.png?170726) no-repeat -39px 0;
+					    }
+
+		    			.txt_item{
+		    				width: 246px;
+						    height: 18px;
+						    border: 1px solid #ccc;
+						    padding: 10px 10px 10px 47px;
+						    font-size: 14px;
+						    font-family: "Microsoft YaHei";
+							outline: none;
+
+		    			}
+
+		    			.focus_txt{
+							border-color: #999;
+							outline: none;
+						}
+		    		}
+
+		    		.mb20{
+		    			margin-bottom: 20px;
+		    		}
+
+		    		.login_safe{
+		    			position: relative;
+					    line-height: 12px;
+
+					    .auto{
+					    	label{
+					    		color: #666;
+							    cursor: pointer;
+					    	}
+					    }
+
+					    .auto_login{
+					    	margin-right: 10px;
+						    vertical-align: middle;
+					    }
+
+					    .forget{
+					    	position: absolute;
+						    right: 0;
+						    top: 0;
+
+						    a{
+						    	color: #666;
+						    	
+						    }
+					    }
+		    		}
+
+		    		.login_btn{
+		    			@include mb20;
+		    			@include mt20;
+
+		    			a{
+		    				display: block;
+						    width: 305px;
+						    height: 40px;
+						    line-height: 40px;
+						    border: none;
+						    color: #fff;
+						    font-size: 18px;
+						    text-align: center;
+						    font-family: "Microsoft YaHei";
+						    background-color: #d7063b;
+						    cursor: pointer;
+
+						    &:hover{
+						    	background-color: #e60740;
+						    }
+		    			}
+		    		}
+		    	}
+
+		    	#login_mobile{
+		    		display: none;
+		    	}
+
+		    	.login_routes{
+		    		display: block;
+		    		width: 305px;
+				    margin-left: -20px;
+
+				    .mobile{
+				    	width: 306px;
+					    height: 16px;
+					    line-height: 16px;
+					    padding: 12px 20px;
+					    background: #f5f5f5;
+					    font-size: 0;
+						
+						.text_right{
+							text-align: right;
+						}
+
+						&>a:nth-child(1) span{
+							color: #666;
+						}
+
+					    .item{
+					    	display: inline-block;
+						    font-size: 14px;
+						    line-height: 14px;
+						    width: 152px;
+						    border-left: 1px solid #ddd;
+						    color: #d7063b;
+
+						    span{
+						    	vertical-align: top;
+							    line-height: 14px;
+							    
+							    
+						    }
+
+							
+
+					    	i{
+					    		border: none;
+							    color: #666;
+					    	}
+
+					    	.icon_phone{
+					    		display: inline-block;
+							    width: 12px;
+							    height: 18px;
+							    margin-top: -2px;
+							    margin-right: 6px;
+							    background: url(https://static02.fn-mart.com/images/member/dialog-login.png?170726) no-repeat -44px -40px;
+					    	}
+
+					    	.icon_arrow{
+					    		display: inline-block;
+							    width: 16px;
+							    height: 16px;
+							    background: url(https://static02.fn-mart.com/images/member/dialog-login.png?170726) no-repeat -58px -40px;
+					    	}
+					    }
+				    }
+
+
+				    .account{
+				    	width: 305px;
+					    height: 20px;
+					    line-height: 20px;
+					    padding: 12px 20px;
+					    color: #999;
+					    background: #eee;
+					    word-spacing: -3px;
+
+					    dt{
+					    	display: inline-block;
+						    vertical-align: top;
+					    	@include mr10;
+					    }
+
+					    & :nth-child(2) a{
+							background: url(https://static02.fn-mart.com/images/member/login/enterprise.png?170726) no-repeat 0 0;
+							&:hover{
+								background-position: -20px 0;
+							}
+				    	}
+
+				    	&>dd:last-child a{
+							margin-left: 10px;
+						    background: url(https://static02.fn-mart.com/images/member/login/enterprise.png?170726) no-repeat 0px -20px;
+						    &:hover{
+								background-position: -20px -20px;
+							}
+				    	}
+
+
+					    dd{
+					    	display: inline-block;
+						    vertical-align: top;
+					    	
+					    	a{
+					    		display: block;
+							    width: 20px;
+							    height: 20px;
+					    	}
+					    }
+				    }
+		    	}
+		    }
+	    }
+    }
+}

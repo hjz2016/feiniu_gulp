@@ -3,6 +3,7 @@ define(function(){
 		init(){
 			this.adToggle();
 			this.firstToggle();
+			this.cityShow();
 			this.secondShow();
 		},
 		adToggle(){
@@ -48,57 +49,25 @@ define(function(){
 				$('.ad').hide();
 			});
 		},
+		cityShow(){
+			// 选择城市
+			this.toggle('.city','.hide_city','city_hover');
+		},
 		firstToggle(){
 			// 我的飞牛显示/隐藏
-			var flag = false;
-			var $myfeiniu = $('.myFeiniu')
-			$myfeiniu.hover(
-				function(){
-					$myfeiniu.addClass('hoverFeiniu');
-					$('.hide_feiniu').show();
-					$myfeiniu.find('.arrow').css({
-						transform : "rotate(180deg)"
-					})
-				},
-				function(){
-					setTimeout(function(){
-						if(flag){
-							flag = false;
-							return;
-						}
-						$myfeiniu.removeClass('hoverFeiniu');
-						$('.hide_feiniu').hide();
-						$myfeiniu.find('.arrow').css({
-							transform : "rotate(0deg)"
-						})
-					},500)
-				}
-			);
-
-			$('.hide_feiniu').mouseenter(function() {
-				flag = true;
-			}).mouseleave(function() {
-				setTimeout(function(){
-					if(flag){
-						flag = false;
-						return;
-					}
-					$myfeiniu.removeClass('hoverFeiniu');
-					$('.hide_feiniu').hide();
-					$myfeiniu.find('.arrow').css({
-						transform : "rotate(0deg)"
-					})
-				},500)
-			});
+			this.toggle('.myFeiniu','.hide_feiniu','hoverFeiniu');
 		},
 		secondShow(){
 			// 手机飞牛网显示/隐藏
+			this.toggle('.feiniu_app','.hide_feiniu_app','hoverFeiniu_app');
+		},
+		toggle(btn,hideObj,hoverCls){
 			var flag = false;
-			$('.feiniu_app').hover(
+			$(btn).hover(
 				function(){
-					$('.feiniu_app').addClass('hoverFeiniu_app');
-					$('.hide_feiniu_app').show();
-					$('.feiniu_app').find('.arrow').css({
+					$(btn).addClass(hoverCls);
+					$(hideObj).show();
+					$(btn).find('.arrow').css({
 						transform : "rotate(180deg)"
 					})
 				},
@@ -108,16 +77,16 @@ define(function(){
 							flag = false;
 							return;
 						}
-						$('.feiniu_app').removeClass('hoverFeiniu_app');
-						$('.hide_feiniu_app').hide();
-						$('.feiniu_app').find('.arrow').css({
+						$(btn).removeClass(hoverCls);
+						$(hideObj).hide();
+						$(btn).find('.arrow').css({
 							transform : "rotate(0deg)"
 						})
 					},500)
 				}
 			);
 
-			$('.hide_feiniu_app').mouseenter(function() {
+			$(hideObj).mouseenter(function() {
 				flag = true;
 			}).mouseleave(function() {
 				setTimeout(function(){
@@ -125,9 +94,9 @@ define(function(){
 						flag = false;
 						return;
 					}
-					$('.feiniu_app').removeClass('hoverFeiniu_app');
-					$('.hide_feiniu_app').hide();
-					$('.feiniu_app').find('.arrow').css({
+					$(btn).removeClass(hoverCls);
+					$(hideObj).hide();
+					$(btn).find('.arrow').css({
 						transform : "rotate(0deg)"
 					})
 				},500)

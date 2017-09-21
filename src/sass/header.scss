@@ -1,0 +1,83 @@
+/* 导航栏 左边 */
+
+	.header .top_bar .bar_center .lf{
+		float: left;
+		height: 100%;
+		position: relative;
+
+
+		
+		.city{
+			padding: 0px 5px;
+
+			&.city_hover{
+				background: #fff;
+			    border: solid #DEDEDE;
+			    border-width: 0 1px;
+			    height: 36px;
+			    margin-left: -1px;
+			}
+		}
+
+		.hide_city{
+			display: none;
+			width: 574px;
+		    height: auto;
+		    padding: 11px 0;
+		    position: absolute;
+		    top: 34px;
+		    left: 141px;
+		    z-index: 10000;
+		    background-color: #fff;
+		    min-height: 1%;
+
+		    .fl{
+		    	width: 289px;
+			    height: auto;
+			    float: left;
+			    border-right: 1px dotted #ddd;
+
+			    li{
+			    	width: 281px;
+				    padding-left: 15px;
+				    line-height: 17px;
+				    margin-bottom: 7px;
+
+				    span{
+				    	font-family: Tahoma;
+					    line-height: 18px;
+					    display: inline-block;
+					    color: #333;
+					    height: 20px;
+					    font-size: 12px;
+					    float: left;
+				    }
+
+				    a{
+				    	display: inline-block;
+					    line-height: 20px;
+					    padding: 0 5px;
+					    margin-left: 4px;
+					    color: #666;
+					    background-color: #fff;
+
+					    &.z-select{
+					    	background-color: #d7063b;
+						    color: #fff;
+					    }
+
+					    &:hover{
+					    	background-color: #f7f7f7;
+						    color: #d7063b;
+					    }
+				    }
+			    }
+		    }
+
+		    .lst2{
+		    	border-right: none;
+		    	width: 273px;
+			    height: auto;
+		    }
+		}
+	}
