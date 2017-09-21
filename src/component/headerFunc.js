@@ -1,10 +1,72 @@
 define(function(){
 	var headerFunc = {
 		init(){
+			this.checkCookie();
 			this.adToggle();
 			this.firstToggle();
 			this.cityShow();
 			this.secondShow();
+		},
+		checkCookie(){
+			var that = this;
+
+			// 绑定初始事件
+			$('#login_status').click(function(){
+				location.href = 'login.html';
+			});
+
+			$('.lf .regi').click(function(){
+				// 跳转到注册页面
+				location.href = 'regi.html';
+			});
+
+			if(getCookie('usn') && getCookie('pwd')){
+				var usn = getCookie('usn');
+				var pwd = getCookie('pwd');
+
+				$(document).ajaxStart(function(){
+					//$('#login_status').html('<img src="images/1.gif" style="width:50px;height:50px;" alt="" />')
+				});
+
+				$.ajax({
+					url : 'http://datainfo.duapp.com/shopdata/userinfo.php',
+					type : 'POST',
+					data : {
+						status : 'login',
+						userID : usn,
+						password : pwd
+					}
+				})
+				.then(function(res){
+					
+					res = JSON.parse(res);
+
+					// 更改状态
+					$('.lf .regi').html('退出登录');
+					that.killCookie();
+
+					// 设置用户信息
+					$('#login_status').html('<span>'+res.userID+'</span>');
+					$('.u_pic img').attr('src',res.userimg_url);
+					$('.u_nologin a').html('你好 ' + res.userID)
+				},function(err){
+					console.log('出错了：' + err.statusText);
+				})
+			}
+		},
+		killCookie(){
+			// 退出登录 清理cookie
+			$('.lf .regi').click(function(){
+				removeCookie('usn','/');
+				removeCookie('pwd','/');
+				location.href = 'index.html';
+
+				$('.lf .regi').off('click');
+				$('.lf .regi').click(function(){
+					// 跳转到注册页面
+					location.href = 'regi.html';
+				})
+			})
 		},
 		adToggle(){
 			// 广告展开 隐藏
@@ -67,6 +129,13 @@ define(function(){
 				function(){
 					$(btn).addClass(hoverCls);
 					$(hideObj).show();
+
+					if(hideObj == '.hide_city'){
+						$(hideObj).css({
+							left : $(btn)[0].offsetLeft + 1
+						})
+					}
+					
 					$(btn).find('.arrow').css({
 						transform : "rotate(180deg)"
 					})

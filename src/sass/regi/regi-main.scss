@@ -1,0 +1,317 @@
+body{
+	background: #f5f5f5;
+}
+
+
+
+.regcon{
+	background: #f5f5f5;
+    width: 985px;
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 13px;
+    font-family: 'Microsoft YaHei';
+    display: block;
+
+	.hide{
+		display: none !important;
+	}
+
+    .top_logo{
+    	background: url(https://static02.fn-mart.com/images/member/fn_index_logo.png?170726) no-repeat;
+	    height: 60px;
+	    width: 190px;
+	    display: inline-block;
+	    margin: 0px 15px 15px;
+    
+    }
+
+    .fl{
+    	float: left;
+    }
+
+    .fr{
+    	float: right;
+    }
+
+    .welcome{
+    	display: inline-block;
+	    height: 40px;
+	    line-height: 40px;
+	    border-left: 1px solid #ddd;
+	    color: #6c6c6c;
+	    padding: 0px 15px;
+	    font-size: 22px;
+	    font-family: 'Microsoft YaHei';
+	    margin-top: 12px;
+    }
+
+    .regi_tab{
+    	.regnav{
+    		list-style: none;
+		    margin: 20px 0px 0px;
+		    padding: 0px 0px 0px 175px;
+		    height: 37px;
+
+		    .uli{
+		    	list-style: none;
+			    margin: 0px;
+			    padding: 0px;
+			    float: left;
+			    height: 35px;
+			    line-height: 35px;
+			    text-align: center;
+			    border: 1px solid #d5d5d5;
+			    border-bottom: 0 none;
+			    background: #fff;
+			    color: #333;
+			    font-family: 'Microsoft YaHei';
+			    font-size: 14px;
+			    margin-right: 10px;
+			    cursor: pointer;
+
+			    a{
+			    	display: block;
+				    color: #333;
+				    text-decoration: none;
+				    padding: 0px 36px;
+			    }
+
+
+		    }
+
+		    .active{
+			    color: #DA3A4C;
+			    font-weight: bold;
+			    border-top: 2px solid #DA3A4C;
+			    height: 36px;
+			    margin-bottom: -1px;
+
+			    a{
+			    	color: #d7063b;
+			    }
+		    }
+
+		    .loginbtn{
+		    	padding: 15px 12px 0px;
+			    color: #3c3c3c;
+			    font-size: 13px;
+
+			    a{
+			    	color: #0066cc;
+				    cursor: pointer;
+			    }
+		    }
+    	}
+    }
+
+    .tab_ctt{
+    	.ctt_wrap{
+    		border: 1px solid #d5d5d5;
+		    background: #fff;
+		    padding: 35px;
+		    clear: both;
+
+		    .regi_fn{
+		    	font-family: 'Microsoft YaHei';
+			    font-size: 12px;
+			    color: #3c3c3c;
+			    padding-left: 60px;
+			    height: 494px;
+
+			    .line{
+			    	height: 37px;
+				    padding-bottom: 25px;
+					
+					.dt{
+						display: inline-block;
+					    height: 34px;
+					    line-height: 34px;
+					    padding-left: 10px;
+					    background: url(https://static02.fn-mart.com/images/member/reg/fn-icon.png?170726) 0px -137px no-repeat;
+					}
+
+				    .linel{
+				    	float: left;
+					    text-align: right;
+					    width: 85px;
+				    }
+
+				    .liner{
+				    	float: left;
+
+				    	.inp{
+				    		float: left;
+						    border: 1px solid #ccc;
+						    padding: 8px;
+						    height: 18px;
+						    line-height: 18px;
+						    margin-right: 10px;
+						    /* color: #333; */
+						    font-family: 'Microsoft YaHei';
+						    outline: 0 none;
+						    font-size: 14px;
+						    vertical-align: middle;
+						    width: 290px;
+						    /* margin: 0px; */
+				    	}
+
+				    	.errorbox{
+				    		color: #d7063b;
+							width: 300px;
+						    background: #ffebeb;
+						    border: 1px solid #ffbdbe;
+						    height: 18px;
+						    line-height: 18px;
+						    padding: 8px;
+
+				    	}
+
+				    	.pwd_txt{
+							
+				    	}
+
+				    	.noticebox{
+				    		width: 227px;
+						    color: #DA3A4C;
+						    background: #fff8e1;
+						    border: 1px solid #fddbaa;
+						    height: 32px;
+						    line-height: 15px;
+						    padding: 2px 8px 0px 8px;
+						    display: none;
+				    	}
+
+				    	.safeline{
+				    		clear: both;
+						    padding-top: 4px;
+						    padding-left: 49px;
+						    color: #666;
+
+						    .sz{
+						    	display: inline-block;
+							    color: #fff;
+							    background: #d5d5d5;
+							    width: 65px;
+							    height: 15px;
+							    text-align: center;
+							    line-height: 15px;
+							    margin-left: 1px;
+						    }
+				    	}
+
+				    	.imgcode_txt{
+				    		width: 137px;
+
+
+				    	}
+
+				    	.img_wrap{
+				    		display: inline-block;
+						    float: left;
+						    margin-right: 10px;
+						    height: 34px;
+						    line-height: 34px;
+
+						    img{
+						    	display: inline;
+							    float: left;
+							    width: 85px;
+							    height: 34px;
+							    margin-right: 10px;
+						    }
+
+						    .chgImg{
+						    	color: #0066cc;
+							    cursor: pointer;
+						    }
+			    		}
+
+			    		.fcode_txt{
+			    			width: 137px;
+			    		}
+
+			    		.getcode{
+			    			display: block;
+						    text-align: center;
+						    line-height: 35px;
+						    background: #f5f5f5;
+						    border: 1px solid #ddd;
+						    border-radius: 1px;
+						    height: 35px;
+						    color: #3c3c3c;
+						    margin: 0 30px 0 5px;
+						    width: 115px;
+						    outline: 0 none;
+						    cursor: pointer;
+						    font-family: 'Microsoft YaHei';
+						    font-size: 12px;
+			    		}
+
+			    		.disabled{
+			    			color: #ccc;
+						    cursor: default;
+			    		}
+				    }
+			    }
+
+			    .liney{
+			    	height: auto;
+				    padding-bottom: 0px;
+
+				    .clearfix{
+				    	zoom: 1;
+				    }
+
+				    .checkcon{
+				    	height: 34px;
+
+				    	.checktxt{
+				    		height: 18px;
+						    padding-right: 106px;
+						    padding-top: 10px;
+
+						    .iyes{
+						    	margin-right: 5px;
+							    margin-top: 2px;
+
+						    }
+
+						    a{
+						    	color: #0066cc;
+							    text-decoration: none;
+						    }
+				    	}
+				    }
+
+				    .regbtn{
+				    	display: block;
+					    clear: both;
+					    cursor: pointer;
+					    margin: 20px 0px 10px 0;
+					    width: 250px;
+					    height: 40px;
+					    color: #fff;
+					    font-family: 'Microsoft YaHei';
+					    font-size: 18px;
+					    text-align: center;
+					    line-height: 40px;
+					    background: #DA3A4C;
+					    text-decoration: none;
+				    	background: #d7063b;
+				    }
+
+				    .notice_check{
+				    	.fnred{
+				    		color: #d7063b;
+				    	}
+				    	a{
+				    		color: #0066cc;
+						    text-decoration: none;
+				    	}
+				    }
+			    }
+		    }
+    	}
+    }
+}

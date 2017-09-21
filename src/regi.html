@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册页面</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="sass/regi/regi-main.css">
+<link rel="stylesheet" href="sass/regi/regi-bottom.css">
+</head>
+<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+
+<script src='libs/require.js'></script>
+<body>
+	<!-- 中部 -->
+	<div class="regcon">
+		<a href="index.html" class="top_logo fl"></a>
+		<span class="welcome">欢迎注册</span>
+		<div class="regi_tab">
+			<ul class="ui_tab_nav regnav">
+                <li class="uli">
+                	<a href="javascript:;">手机注册</a>
+                </li>
+                <li class="uli active">
+                	<a href="http://localhost:8888/regi.html">邮箱注册</a>
+                </li>
+                <li class="no fr loginbtn">我已注册，马上
+                	<a href="https://passport.feiniu.com/gateway/login">登录&gt;</a>
+                </li>
+            </ul>
+            <div class="tab_ctt">
+				<div class="ctt_wrap">
+					<div class="regi_fn">
+                        <div class="line">
+                            <label class="linel">
+                            	<span class="dt">邮箱：
+                            	</span>
+                            </label>
+                            <div class="liner">
+                                <input type="text" class="email_txt inp" placeholder="请输入邮箱">
+                                <p class="fl errorbox hide" id="emailBox">邮箱格式输入不正确
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="line">
+                            <label class="linel"><span class="dt">设置密码：</span></label>
+                            <div class="liner">
+                                <input type="password" class="pwd_txt inp" placeholder="6-16位大小写英文字母、数字或符号的组合" autocomplete="off">
+                                <p class="fl errorbox hide" id="pwdBox">该密码比较简单，有被盗风险，建议您更改更复杂的密码</p><p class="fl noticebox hide">6-16位字符，建议由字母、数字和符号两种以上组合</p>
+                                <div class="safeline">
+                                	<span>安全程度：</span>
+                                	<span class="sz">低</span>
+                                	<span class="sz">中</span>
+                                	<span class="sz">高</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="line">
+                            <label class="linel"><span class="dt">确认密码：</span></label>
+                            <div class="liner">
+                                <input type="password" class="con_pwd_txt inp" placeholder="请再次输入密码" autocomplete="off">
+                                <p class="fl errorbox hide" id="pwdBox2">两次输入密码不一致</p>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <label class="linel"><span class="dt">手机号码：</span></label>
+                            <div class="liner">
+                                <input type="text" class="phone_txt inp" placeholder="请输入手机号码">
+                                <p class="fl errorbox hide" id="mobileBox">手机号码输入不正确
+                                </p>
+                            </div>
+                        </div>
+                        
+                            <div class="line">
+                                <label class="linel"><span class="dt">图形验证码：</span></label>
+                                <div class="liner">
+                                    <input type="text" class="imgcode_txt inp" placeholder="">
+                                    <span class="img_wrap">
+	                                    <img src="https://reg.feiniu.com/patcha/image" id="captchaImg">
+                                    	<span>看不清？
+                                    		<a class="chgImg">换一张</a>
+	                                    </span>
+                                    </span>
+                                   	<p class="fl errorbox hide" id="imgcodeErr">验证码输入不正确
+                                   	</p>
+                                </div>
+
+                            </div>
+                        
+                        <div class="line">
+                            <label class="linel"><span class="dt">验证码：</span></label>
+                            <div class="liner">
+                                <input type="text" class="fcode_txt inp" placeholder="">
+                                <button class="fl getcode disabled" id="sendSms" disabled="">获取验证码
+                                </button>
+                                <p class="fl errorbox hide" id="mbmsgBox">验证码输入不正确</p></div>
+                            <div id="show-voice" class="show-voice"></div>
+                        </div>
+
+                        <div class="line liney clearfix">
+                            <label class="linel">&nbsp;</label>
+                            <div class="liner">
+                                <div class="clearfix checkcon">
+                                    <p class="fl checktxt">
+                                        <input type="checkbox" class="iyes fl J_protocal">
+                                        <span class="fl">我已阅读并同意
+                                        </span>
+                                        <a class="fl" href="http://sale.feiniu.com/help_center/hc-2.html" target="_blank">《飞牛网服务协议》
+                                        </a>
+                                    </p>
+                                    <p class="fl errorbox hide" id="protocalBox"></p>
+
+                                </div>
+
+                                <a class="regbtn " href="javascript:;">同意协议并注册
+                                </a>
+                                <p class="notice_check hide">
+                                	<span class="fnred">请勾选
+                                	</span>我已阅读并同意
+                                	<a class="itxt" href="" target="http://sale.feiniu.com/help_center/hc-2.html">《飞牛网服务协议》</a>
+                                </p>
+                                <input type="hidden" class="isQiye" name="isQiye" value="0">
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="regi_bottom"></div>
+	<script>
+		// 加载注册页面模块
+		require(['js/regi/regi-main.js']);
+	</script>
+</body>
+</html>

@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="sass/login/login-mid.css">
 <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
 <script src='libs/require.js'></script>
+<script src='libs/cookie.js'></script>
 
 </head>
 <body>
@@ -57,12 +58,12 @@
 	                <form class="login_form_inner">
 	                    <div class="input_item mb20">
 	                        <label class="label_item username "></label>
-	                        <input type="text" class="txt_item " value="" placeholder="邮箱/用户名/手机号" name="username" autocomplete="off">
+	                        <input type="text" id="usn_val" class="txt_item " value="" placeholder="邮箱/用户名/手机号" name="username" autocomplete="off">
 	                    </div>
 	                    <input type="hidden">
 	                    <div class="input_item mb20">
 	                        <label class="label_item password"></label>
-	                        <input type="password" class="txt_item" placeholder="密码" name="password" autocomplete="off">
+	                        <input type="password" id="pwd_val" class="txt_item" placeholder="密码" name="password" autocomplete="off">
 							<!-- <span id="capspwd" class="u-caps-warming">
 								<em></em>
 								<span></span>键盘大写锁定开启
@@ -84,7 +85,7 @@
 	                        <span>看不清?<a href="javascript:;" class="cpcchang">换一张</a></span>
 	                    </div>
 	                    <div class="login_btn">
-	                        <a href="javascript:;" class="J-login-submit" name="sbtbutton">登&nbsp;&nbsp;&nbsp;录</a>
+	                        <a id="submit_btn" name="sbtbutton">登&nbsp;&nbsp;&nbsp;录</a>
 	                    </div>
 	                </form>
 	                <form id="login_mobile" >
@@ -94,7 +95,7 @@
 	                    </div>
 	                    <div class="input_item u-authcode" id="logincaptchaMsg">
 	                        <input type="text" class="txt_item mr10 J-input-auth" placeholder="图形验证码" name="imgcode" maxlength="4">
-	                        <img src="https://passport.feiniu.com/dovcode/getVcodeL" class="code-img mr10 vcode">
+	                        <!-- <img src="" class="code-img mr10 vcode"> -->
 	                        <span>看不清?<a href="javascript:;" class="cpcchang">换一张</a></span>
 	                    </div>
 	                    <div class="input_item mb20 mt20">
@@ -165,7 +166,7 @@
 	<div class="login_bottom"></div>
 	<script>
 		// 加载登录页面模块
-		require(['js/login/main.js']);
+		require(['js/login/login-main.js']);
 	</script>
 </body>
 </html>

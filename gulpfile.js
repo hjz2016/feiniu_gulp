@@ -37,8 +37,8 @@ const sass = require('gulp-sass');
 gulp.task('server',()=>{
 	connect.server({
         root:'dist',  //以谁为服务器根目录
-        port:8888,  // 端口号 
-        livereload:true
+        port:8888  // 端口号 
+        // livereload:true
     });
 });
 
