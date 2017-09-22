@@ -18,7 +18,7 @@
 }
 	/* 头部广告 */
 	.header .ad{
-		background:rgb(255, 156, 0);
+	    background-color: #c80002;
 		position: relative;
 		z-index: 0;
 		/* height: 60px;	 */
@@ -550,14 +550,14 @@
 		line-height: 30px;
 		font-size: 13px;
 		padding-left: 8px;
-		transition: all .3s;
+		transition: padding-left .3s;
 	}
 
 	.header .center_main .bottom_wrap .good_list .item:hover{
 		background: #d7063b;
 		padding-left: 12px;
 		width: 178px;
-		
+		color: #fff;
 	}
 
 	.header .center_main .bottom_wrap .good_list .item:hover a{
@@ -587,6 +587,14 @@
 		    min-height: 452px;
 		    padding-left: 14px;
 		    background-color: #fff;
+		}
+
+		.header .center_main .bottom_wrap .hide_list .hide{
+			display: none;
+		}
+
+		.header .center_main .bottom_wrap .hide_list .show{
+			display: block;
 		}
 
 		.header .center_main .bottom_wrap .hide_list_wrap .col{

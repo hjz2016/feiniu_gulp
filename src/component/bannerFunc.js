@@ -12,7 +12,11 @@ define(function(){
 			var flag = false;
 			var that = this;
 			$('.good_list').children('.item').hover(function(){
+				$('.hide_list_wrap').removeClass('show')
 				$('.hide_list').show();
+				$('.hide_list_wrap').addClass('hide');
+
+				$('.hide_list_wrap').eq($(this).index()).addClass('show');
 				clearTimeout(that.timer)
 			},function(){
 				that.timer = setTimeout(function(){
@@ -21,7 +25,7 @@ define(function(){
 						return;
 					}
 					$('.hide_list').hide();
-				},500)
+				},100)
 			});
 
 			$('.hide_list').mouseenter(function() {
@@ -33,7 +37,7 @@ define(function(){
 						return;
 					}
 					$('.hide_list').hide();
-				},500)
+				},100)
 			});
 		},
 		chooseCard(){

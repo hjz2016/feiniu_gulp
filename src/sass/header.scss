@@ -81,3 +81,33 @@
 		    }
 		}
 	}
+
+// 搜索框
+.header .center_main .center_wrap .search_wrap{
+	.search_cont{
+		width: 439px;
+		border: 1px solid #ccc;
+		position: absolute;
+		background: #fff;
+		z-index: 999999;
+		display: none;
+		
+		li{
+			cursor: pointer;
+
+			&:hover{
+				a{
+					background: #f7f7f7;
+				}
+			}
+		}
+
+		a{
+			font-size: 12px;
+		    color: #666;
+		    padding: 6px 7px;
+		    display: block;
+		    line-height: 1.5;
+		}
+	}
+}

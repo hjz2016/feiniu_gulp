@@ -10,7 +10,7 @@ table {
     fieldset, img, abbr {
     border: 0;
 }
-address, caption, cite, code, dfn, em, 
+address, caption, cite, code, dfn, em, i, 
 h1, h2, h3, h4, h5, h6, strong, th, var {
     font-weight: normal;
     font-style: normal;
@@ -24,4 +24,8 @@ caption, th {
 a, ins {
     text-decoration: none;
     color: #000;
+}
+button, input, select, textarea{
+    font-size: 100%;
+    outline: 0;
 }

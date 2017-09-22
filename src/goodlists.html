@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="sass/header.css">
+<link rel="stylesheet" href="sass/list/list-main.css">
+<link rel="stylesheet" href="sass/list/list-bottom.css">
+<link rel="stylesheet" href="css/font.css">
+</head>
+<script src='http://at.alicdn.com/t/font_398956_q7wvy41p9ryn9udi.js'></script>
+<script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
+<script src='libs/require.js'></script>
+<script src='libs/cookie.js'></script>
+<body>
+	<!-- 公共头部部分 -->
+	<div class="header"></div>
+	<!-- 分割线 -->
+	<div class="end_line"></div>
+	<!-- 主部分 -->
+	<div class="list_main"></div>
+	<!-- 底部 -->
+	<div class="list_bottom"></div>
+	<script>
+		// 搜索类型
+		if(getCookie('type')){
+			$('title').html(getCookie('type'));
+		}
+		// 引入主模块
+		require(['js/list/good-list.js']);
+	</script>
+</body>
+</html>

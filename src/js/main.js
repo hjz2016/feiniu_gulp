@@ -2,7 +2,7 @@
 	$('.header').load('html/header.html',function(){
 		require(['component/headerFunc.js'],function(headerFunc){
 			headerFunc.init();
-		})
+		});
 	});
 
 	// 加载banner区域
