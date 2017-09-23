@@ -42,8 +42,8 @@ define(function(){
 							$('.msg_err').show()
 							.find('.errorMsg').html('登录成功！');
 							that.success(usnVal,pwdVal);
-							self.location.href = 'index.html';
-							break;
+						
+							
 					}
 					
 				},function(err){
@@ -63,6 +63,13 @@ define(function(){
 				setCookie('usn',u,0,'/');
 				setCookie('pwd',p,0,'/');
 			}
+
+			if(getCookie('page') == 0){
+				self.location.href = 'index.html';
+			}else if(getCookie('page') == 1){
+				self.location.href = 'goodlists.html';
+			}
+			
 		}
 	}
 

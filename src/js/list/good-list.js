@@ -1,5 +1,5 @@
 	// 渲染头部
-	$('.header').load('html/header.html',function(){
+	$('.header').load('html/list/list-header.html',function(){
 		// 填充搜索框
 		$('#search_txt').val(getCookie('type'))
 
@@ -13,6 +13,7 @@
 
 		$('.outer').find('img')
 		.attr('src','//img03.fn-mart.com/pic/8b67133e84a51b20dcb7/hTHnzz1T_2fMKdVlX2/79SGmRFakGcGEY/CsmRsVm_OVWADhd8AAB88WFMTYQ591.jpg')
+		
 		require(['component/headerFunc.js'],function(headerFunc){
 			headerFunc.adToggle = function(){
 				// 广告展开 隐藏
@@ -58,6 +59,12 @@
 			}
 
 			headerFunc.init();
+
+			// 绑定跳转登录页事件
+			$('#login_status').off('click').click(function() {
+				location.href = 'login.html';
+				setCookie('page',1,0,'/'); // 列表页
+			});
 		});
 
 		require(['component/list/list-fn.js'],function(leftList){
@@ -66,7 +73,17 @@
 	});
 
 	// 渲染主部分
-	$('.list_main').load('html/list/list-main.html');
+	$('.list_main').load('html/list/list-main.html',function(){
+		// 引入筛选框部分的功能组件
+		require(['component/list/filter-fn.js'],function(filterFn){
+			filterFn.init();
+		})
+
+		// 引入分页部分的功能组件
+		require(['component/list/paging-fn.js'],function(pagingFn){
+			// pagingFn.init();
+		})
+	});
 
 
 	// 渲染底部

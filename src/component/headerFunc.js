@@ -18,8 +18,9 @@ define(function(){
 			var that = this;
 
 			// 绑定初始事件
-			$('#login_status').click(function(){
+			$('#login_status').on('click',function(){
 				location.href = 'login.html';
+				setCookie('page',0,0,'/'); // 主页
 			});
 
 			$('.lf .regi').click(function(){
@@ -67,10 +68,15 @@ define(function(){
 			$('.lf .regi').click(function(){
 				removeCookie('usn','/');
 				removeCookie('pwd','/');
-				location.href = 'index.html';
 
-				$('.lf .regi').off('click');
-				$('.lf .regi').click(function(){
+				if(getCookie('page') == 0){
+					self.location.href = 'index.html';
+				}else if(getCookie('page') == 1){
+					self.location.href = 'goodlists.html';
+				}
+
+				$('.lf .regi').off('click')
+				.click(function(){
 					// 跳转到注册页面
 					location.href = 'regi.html';
 				})

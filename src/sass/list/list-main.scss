@@ -18,6 +18,8 @@
 	box-shadow: 0 0 2px 2px #f8f8f8;
 }
 
+$hoverC:#d7063b;
+
 /* 主部分 */
 .good_cnt{
 	width: 1190px;
@@ -121,6 +123,433 @@
 			    }
 		    }
 	    }
+	}
+
+	// 商品分类
+	.goods_type{
+		width: 100%;
+
+		.gt_cont{
+			    border: 2px solid #e9e9e9;
+			    font-family: "microsoft yahei";
+			
+			.gt_ct_item:first-child{
+
+			    border-top: 0 none;
+			}
+
+			.gt_ct_item{
+			    line-height: 40px;
+			    border-top: 1px dotted #ddd;
+			    background: #f7f7f7;
+			    position: relative;
+			    z-index: 3;
+			    zoom: 1;
+
+			    .item_key{
+
+				    width: 130px;
+				    background: #F7F7F7;
+				    float: left;
+				    overflow: hidden;
+					
+					.m_s{
+
+					    color: #666;
+					    position: relative;
+
+					    i{
+
+						    width: 5px;
+						    height: 9px;
+						    overflow: hidden;
+						    position: absolute;
+						    top: 16px;
+						    left: 45px;
+						    background: url(http://static02.fn-mart.com/product/images/list_new/list.png?170725) -100px -48px no-repeat;
+					    }
+					}
+				    p{
+
+					    font-size: 12px;
+					    color: #999;
+					    padding-right: 15px;
+					    width: 115px;
+					    overflow: hidden;
+					    height: 40px;
+					    text-align: right;
+				    }
+			    }
+
+			    .item_val{
+		    	    margin-left: 130px;
+				    padding-right: 118px;
+				    overflow: hidden;
+				    zoom: 1;
+				    background: #fff;
+					
+					.v_tab{
+
+					    height: 40px;
+					    overflow: hidden;
+					    white-space: nowrap;
+
+					    li{
+					    	float: left;
+
+					    	
+					    }
+
+					    .z_select{
+					    	a{
+
+							    border-color: #c7c7c7;
+							    border-bottom: 0 none;
+							    height: 38px;
+							    position: relative;
+							    z-index: 2;
+					    	}		
+
+					    	i{
+
+							    background-position: -54px -63px;
+					    	}
+				    	}
+
+					    a{
+
+						    height: 36px;
+						    line-height: 36px;
+						    padding: 0 18px;
+						    display: block;
+						    text-align: center;
+						    border: 2px solid #fff;
+						    background: #fff;
+					    }
+
+					    i{
+
+						    display: inline-block;
+						    vertical-align: middle;
+						    margin-left: 5px;
+						    background: url(http://static02.fn-mart.com/product/images/list_new/list.png?170725) -43px -63px no-repeat;
+						    width: 9px;
+						    height: 5px;
+					    }
+					}
+
+				    .v_lst{
+
+					    width: 100%;
+					    max-height: 40px;
+					    float: left;
+					    overflow: hidden;
+					    zoom: 1;
+					    position: relative;
+
+					    li{
+					    	float: left;
+
+					    	
+					    }
+
+					    a{
+
+						    position: relative;
+						    padding: 0 15px 0 20px;
+						    display: block;
+						    overflow: hidden;
+						    white-space: nowrap;
+						    text-overflow: ellipsis;
+						    text-align: left;
+						    text-decoration: none;
+
+						    &:hover{
+						    	color: $hoverC;
+						    }
+					    }
+
+					    i{
+
+						    position: absolute;
+						    background: url(http://static02.fn-mart.com/product/images/list_new/list.png?170725) -15px -48px no-repeat;
+						    top: 14px;
+						    left: 19px;
+						    width: 13px;
+						    height: 13px;
+						    display: none;
+					    }
+
+
+				    }
+
+				    .v_price{
+											
+					    width: 165px;
+					    text-align: center;
+					    color: #ccc;	    	
+
+					    input{
+						    margin: 0 5px;
+						    border: 1px solid #ddd;
+						    padding: 0;
+						    position: relative;
+						    top: -1px;
+
+						    width: 38px;
+						    height: 20px;
+						    line-height: 20px;
+						    text-align: center;
+					    }
+
+					    span{
+
+						    display: inline-block;
+						    margin-right: 10px;
+						    border: 1px solid #ccc;
+						    -moz-border-radius: 2px;
+						    -webkit-border-radius: 2px;
+						    border-radius: 2px;
+						    cursor: pointer;
+						    color: #6c6c6c;				    
+						    width: 38px;
+						    height: 20px;
+						    line-height: 20px;
+						    text-align: center;
+
+						    &:hover{
+
+							    border-color: #aaa;
+							    color: #333;
+						    }
+					    }
+				    }
+
+				    .h80{
+
+						    max-height: 111px;
+						    padding: 6px 0 0 9px;
+						    margin-bottom: 6px;
+				    	li{	    		
+						    border: 1px solid #ddd;
+						    margin-right: -1px;
+						    margin-top: -1px;
+							
+						    &:hover{
+								.lst_bd{
+									border-color: #d7063b;
+								}
+
+						    	.l_b_img{
+						    		display: none;
+						    	}
+						    }
+
+						    .lst_bd{
+
+							    position: relative;
+							    border: 2px solid #fff;
+							    width: 111px;
+							    height: 50px;
+
+							    a{
+
+								    overflow: hidden;
+								    white-space: nowrap;
+								    text-overflow: ellipsis;
+								    text-align: center;
+								    line-height: 50px;
+							    }
+
+							    .l_b_img{
+
+								    position: absolute;
+								    left: 0;
+								    top: 0;
+								    background-color: #fff;
+								    width: 111px;
+								    height: 50px;
+
+								    img{
+								    	width: 111px;
+								    	height: 50px;
+								    }
+							    }
+					    	}
+				    	}
+				    }
+
+				    
+			    }
+
+			    .v_btns{
+					    display: none;
+					    float: left;
+					    width: 100%;
+					    text-align: center;
+
+					    .z-disable{
+
+						    border-color: #dedede;
+						    color: #ccc;
+						    background: #f8f8f8;
+						    cursor: default;
+					    }
+
+					    .confirm{
+
+						    background-color: #d7063b;
+						    border-color: #d7063b;
+						    color: #fff;
+					    }
+
+					    a{
+
+						    display: inline-block;
+						    width: 38px;
+						    height: 20px;
+						    line-height: 20px;
+						    text-align: center;
+						    margin-right: 10px;
+						    border: 1px solid #ccc;
+						    -moz-border-radius: 2px;
+						    -webkit-border-radius: 2px;
+						    border-radius: 2px;
+						    text-decoration: none;
+						    color: #6c6c6c;
+						    background: #f9f9f9;
+					    }
+				    }
+
+			    .hide_tb_cont{
+
+			    	.hide{
+						display: none;
+			    	}
+			    	.tb_panel{
+
+					    width: 1126px;
+					    padding-right: 60px;
+					    position: absolute;
+					    left: -2px;
+					    top: 38px;
+					    border: 2px solid #c7c7c7;
+					    background: #fff;
+						
+						.item_more{
+
+						    width: 60px;
+						    right: 0;
+						}
+					    li{
+					    	float: left;
+							
+							&:hover{
+								a{
+									color: $hoverC;
+								}
+							}
+
+					    	a{
+
+							    position: relative;
+							    padding: 0 15px 0 20px;
+							    display: block;
+							    overflow: hidden;
+							    white-space: nowrap;
+							    text-overflow: ellipsis;
+							    text-align: left;
+							    text-decoration: none;
+					    	}
+
+					    	i{
+
+							    position: absolute;
+							    background: url(http://static02.fn-mart.com/product/images/list_new/list.png?170725) -15px -48px no-repeat;
+							    top: 14px;
+							    left: 19px;
+							    width: 13px;
+							    height: 13px;
+							    display: none;
+					    	}
+					    }
+			    	}
+			    }
+
+			    .item_more{
+
+				    width: 110px;
+				    line-height: 18px;
+				    position: absolute;
+				    top: 8px;
+				    right: 3px;
+				    overflow: hidden;
+				    zoom: 1;
+					
+					.check_fn{
+													
+					    width: 38px;
+					    height: 18px;
+					    line-height: 18px;
+					    padding: 0 5px;
+					    border: 1px solid #ddd;
+					    background: #F9F9F9;
+					    text-align: right;
+					    margin-right: 10px;
+						
+						&:hover{
+							
+						    border-color: #aaa;
+						    color: #3C3C3C;
+						}
+					    i{
+												    	
+						    right: 32px;
+						    background-position: -60px -48px;
+					    }
+					}
+
+					a{
+
+					    font-size: 12px;
+					    float: left;
+					    color: #6C6C6C;
+					    position: relative;
+
+					    i{
+
+						    position: absolute;
+						    top: 4px;
+						    width: 12px;
+						    height: 10px;
+						    background: url(http://static02.fn-mart.com/product/images/list_new/list.png?170725) no-repeat;
+						    display: block;
+					    }
+					}
+
+				    .more_fn{
+
+					    width: 38px;
+					    height: 18px;
+					    text-align: left;
+					    line-height: 18px;
+					    padding: 0 5px;
+						
+						&:hover{
+							color : $hoverC;
+							i{
+								background-position: -76px -34px;
+							}
+						}
+					    i{
+
+						    right: 5px;
+						    background-position: -62px -34px;
+					    }
+				    }
+			    }
+			}
+		}
 	}
 	
 	// 商品
@@ -390,6 +819,10 @@
 							    height: 33px;
 							    line-height: 33px;
 							    border-bottom: 1px solid #cfcfcf;
+								
+								.hide{
+									display: none;
+								}
 
 							    .z-select{
 							    	height: 34px;
@@ -409,12 +842,23 @@
 						    .a_cont_ls{
 					    	    width: 398px;
 							    padding: 15px 10px;
-							    overflow: hidden;
+							    
+							    position: relative;
 
 							    .ls_panel{
 							    	min-height: 130px;
 								    overflow: hidden;
 								    zoom: 1;
+								    position: relative;
+								    
+									.loading_img{
+										width: 75px;
+										height: 75px;
+										position: absolute;
+										left: 50%;
+										top: 50%;
+										transform: translate(-50%,-50%);
+									}
 
 								    li{
 							    	    height: 20px;
@@ -434,6 +878,10 @@
 										    }
 									    }
 								    }
+							    }
+
+							    .hide{
+							    	display: none;
 							    }
 						    }
 					    }
@@ -501,6 +949,7 @@
 			    margin-bottom: 20px;
 			    z-index: 1;
 			    overflow: hidden;
+			    min-height: 800px;
 
 			    .g_lst{
 			    	padding-top: 6px;
@@ -748,8 +1197,8 @@
 
 		    	    .pg_num{
 	    	    	    float: left;
-						
-						a{
+
+						a,span{
 							float: left;
 						    width: 34px;
 						    height: 34px;
@@ -758,12 +1207,7 @@
 						    font-size: 14px;
 						    text-align: center;
 						    font-family: "microsoft yahei";
-						}
-
-	    	    	    .ctrl{
-	    	    	    	width: 82px;
-						    line-height: 32px;
-						    border: 1px solid #cfcfcf;
+							border: 1px solid #cfcfcf;
 						    background: #f9f9f9;
 
 						    i{
@@ -772,26 +1216,38 @@
 							    font-family: SimSun;
 							    padding: 0 7px;
 						    }
-	    	    	    }
+						}
 
-	    	    	    .item{
-	    	    	    	border: 1px solid #cfcfcf;
+						.current{
+	    	    	    	background: #d7063b;
+						    border-color: #d7063b;
+						    color: #fff;
+						    cursor: default;
+						   
+	    	    	    } 
+
+						.prev,.next{
+							width: 82px;
+						    line-height: 32px;
+						    border: 1px solid #cfcfcf;
 						    background: #f9f9f9;
+						    color: #333 !important;
+						}
+
+	    	    	    a{
+	    	    	    	
 	    	    	    }
 
 	    	    	    .z_disable{
     	    	    	    border-color: #ddd;
 						    background: #fff;
-						    color: #dadada;
+						    color: #dadada !important;
 						    cursor: default;
+
+
 	    	    	    }
 
-	    	    	    .z_select{
-	    	    	    	background: #d7063b;
-						    border-color: #d7063b;
-						    color: #fff;
-						    cursor: default;
-	    	    	    }
+	    	    	    
 		    	    }
 
 		    	    .pg_act{
@@ -945,6 +1401,10 @@
 						    height: 38px;
 						    display: block;
 						    font-size: 12px;
+
+						    &:hover{
+						    	color: #d7063b;
+						    }
 					    }
 				    }
 

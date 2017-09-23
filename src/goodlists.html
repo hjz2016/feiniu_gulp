@@ -14,6 +14,7 @@
 <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
 <script src='libs/require.js'></script>
 <script src='libs/cookie.js'></script>
+<script src='libs/jquery.pagination.js'></script>
 <body>
 	<!-- 公共头部部分 -->
 	<div class="header"></div>
@@ -30,6 +31,8 @@
 		}
 		// 引入主模块
 		require(['js/list/good-list.js']);
+
+		setCookie('page',1,0,'/')
 	</script>
 </body>
 </html>
