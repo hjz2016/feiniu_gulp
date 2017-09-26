@@ -12,6 +12,7 @@
 	text-decoration: underline !important;
 }
 
+
 .fixed{
 
     display: block;
@@ -508,7 +509,7 @@
 	    position: absolute;
 	    top: 12px;
 	    left: 10px;
-	} 
+	}
 
 	.header .center_main .center_wrap .rt_cart #cart{
 		float: left;
@@ -603,6 +604,7 @@
 		top: 40px;
 		height: 450px;
 		z-index: 9999;
+		display: none;
 	}
 
 	.header .center_main .bottom_wrap .good_list .item{
@@ -1488,7 +1490,7 @@
 		}
 		
 
-		.fix_rt .fix_cart .min_pic span.pic_small{
+		.fix_rt .fix_cart .min_pic span{
 			display: inline-block;
 			color: #999;
 			font-size: 12px;
@@ -1497,7 +1499,7 @@
 			display: block;
 		}
 
-		.fix_rt .fix_cart .min_pic span.pic_small i{
+		.fix_rt .fix_cart .min_pic span i{
 			display: inline-block;
 		    width: 50px;
 		    height: 50px;

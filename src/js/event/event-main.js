@@ -63,28 +63,25 @@
 			// 绑定跳转登录页事件
 			$('#login_status').off('click').click(function() {
 				location.href = 'login.html';
-				setCookie('page',1,0,'/'); // 列表页
+				setCookie('page',3,0,'/'); // 活动页
 			});
 		});
 
+		// 调用list中的左侧三级导航模块
 		require(['component/list/list-fn.js'],function(leftList){
 			leftList.init();
+			leftList.clickProdJump = null;
+			
 		})
 	});
 
 	// 渲染主部分
-	$('.list_main').load('html/list/list-main.html',function(){
-		// 引入筛选框部分的功能组件
-		require(['component/list/filter-fn.js'],function(filterFn){
-			filterFn.init();
-		})
-
-		// 引入分页部分的功能组件
-		require(['component/list/paging-fn.js'],function(pagingFn){
-			// pagingFn.init();
+	$('.event_main').load('html/event/event-main.html',function(){
+		require(['component/event/event-fn.js'],function(eventFn){
+			eventFn.init(); 
 		})
 	});
 
 
 	// 渲染底部
-	$('.list_bottom').load('html/bottom.html')
+	$('.event_bottom').load('html/bottom.html')

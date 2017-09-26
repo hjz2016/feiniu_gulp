@@ -6,33 +6,38 @@
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/list-hide-common.css">
 <link rel="stylesheet" href="sass/header.css">
-<link rel="stylesheet" href="sass/list/list-main.css">
-<link rel="stylesheet" href="sass/list/list-bottom.css">
+<link rel="stylesheet" href="sass/detail/detail-main.css">
+<link rel="stylesheet" href="sass/detail/detail-bottom.css">
 <link rel="stylesheet" href="css/font.css">
 </head>
 <script src='http://at.alicdn.com/t/font_398956_q7wvy41p9ryn9udi.js'></script>
 <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
 <script src='libs/require.js'></script>
 <script src='libs/cookie.js'></script>
-<script src='libs/jquery.pagination.js'></script>
 <body>
 	<!-- 公共头部部分 -->
 	<div class="header"></div>
 	<!-- 分割线 -->
 	<div class="end_line"></div>
 	<!-- 主部分 -->
-	<div class="list_main"></div>
+	<div class="detail_main"></div>
 	<!-- 底部 -->
-	<div class="list_bottom"></div>
+	<div class="detail_bottom"></div>
 	<script>
-		// 搜索类型
-		if(getCookie('type')){
-			$('title').html(getCookie('type'));
+		// 表示从哪个商品跳转过来
+		if(getCookie('goodInfo')){
+			console.log(getCookie('goodInfo'))
+			var goodInfo = JSON.parse(getCookie('goodInfo'));
+			$('title').html(goodInfo.tt);
 		}
 		// 引入主模块
-		require(['js/list/good-list.js']);
+		require(['js/detail/detail-main.js']);
 
-		setCookie('page',1,0,'/')
+		// 详情页类型为2
+		setCookie('page',2,0,'/')
+
+		// 商品对应图
+		
 	</script>
 </body>
 </html>

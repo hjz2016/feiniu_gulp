@@ -1,0 +1,1668 @@
+/* 分割线 */
+.end_line{
+	width: 100%;
+    height: 2px;
+    background: #333;
+
+} 
+
+$hoverC:#d7063b;
+
+@mixin showPoints{
+	 overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fn-clear{
+	zoom: 1;
+}
+
+.fn-clear:after{
+
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+ .hide{
+	display: none;
+}
+
+q:before, q:after{
+
+    content: '';
+    display: inline-block;
+}
+
+.fn-rmb-num{
+
+    font-family: Century Gothic,verdana,arial;
+}
+
+.marginFR25{
+	margin: 0 25px;
+}
+
+.angle{
+	display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border: 4px solid #93afcb;
+    border-color: #FFF #06C;
+    border-width: 4px 0px 4px 4px;
+}
+
+.red-block {
+    color: #FFF;
+    background-color: #d7063b;
+    padding: 1px;
+    line-height: 13px;
+    /* vertical-align: middle; */
+    font-size: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    zoom: 1;
+    font-family: sans-serif, 'Hiragino Sans GB';
+}
+
+.btn{
+	    display: block;
+    height: 49px;
+    font-size: 0px;
+    line-height: 0px;
+    width: 0;
+    float: left;
+    position: relative;
+    z-index: 0;
+}
+
+.fnProarea{
+
+    height: 26px;
+    position: relative;
+    float: left;
+    z-index: 0;
+
+    .fnProarea span{
+
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #3c3c3c;
+    border: 1px solid #e9e9e9;
+    background-color: #fff;
+    font-weight: normal;
+    padding: 0 24px 0 5px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    }
+}
+
+.fnProarea i{
+
+    width: 21px;
+    height: 24px;
+    background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat scroll -9px -24px;
+    font-style: normal;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.proarea{
+
+    width: 390px;
+    padding: 20px 15px 0 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+    position: relative;
+}
+
+.fnProarea .proarea{
+
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 2;
+    zoom: 1;
+    display: none;
+}
+
+.proarea a._close{
+
+    width: 9px;
+    height: 8px;
+    background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat scroll 0 -9px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.proarea ._tab{
+
+    width: 100%;
+    height: 25px;
+    border-bottom: 1px solid #d7063b;
+    background-color: #fff;
+    float: left;
+}
+
+
+
+.proarea ._tabCont {
+    width: 360px;
+    /* height: 300px; */
+    padding: 10px 15px;
+    float: left;
+}
+
+.marginL10{
+	margin-left: 10px;
+}
+
+
+/* 主部分 */
+.detail_main{
+	.container{
+
+    width: 1190px;
+    margin: 0 auto;
+
+    	.breadcrumb{
+
+		    height: 36px;
+		    line-height: 36px;
+		    font-size: 12px;
+		    margin-bottom: 6px;
+		    padding-left: 10px;
+		    
+		    font-family: sans-serif, 'Hiragino Sans GB';
+
+		    strong{
+		    	font-size: 14px;
+
+		    	
+		    }
+
+			a{
+				color: #3C3C3C;
+
+				&:hover{
+					color :  $hoverC;
+				}
+	    	}
+
+	    	em{
+				
+			    font-weight: normal;
+			    color: #d7063b;
+			    width: 172px;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    height: 20px;
+			    line-height: 22px;
+	    	}
+
+		    i{
+
+			    font-style: normal;
+			    font-family: simsun;
+		    }
+    	}
+
+    	.product-main{
+
+		    border-top: 1px solid #F2F2F2;
+		    border-bottom: 1px solid #f1f1f1;
+		    margin-bottom: 20px;
+		    border-left: 1px solid #f1f1f1;
+		    border-right: 1px solid #f1f1f1;
+		    position: relative;
+		    z-index: 2;
+
+		    .product-info{
+
+			    float: right;
+			    width: 789px;
+			    border-left: 1px solid #F2F2F2;
+			    /* _margin-left: -1px; */
+
+			    .product-info-title{
+
+				    min-height: 61px;
+				    padding: 17px 25px 15px;
+				    border-right: 1px solid #F2F2F2;
+				    border-bottom: 1px solid #DEDEDE;
+				    background-color: #FFF;
+				    width: 538px;
+				    zoom: 1;
+
+				    h1{
+											
+					    font-size: 16px;
+					    font-weight: 700;
+					    line-height: 21px;
+					    padding-bottom: 4px;
+					    font-family: sans-serif, 'Hiragino Sans GB';
+
+					    .title_img{
+
+						    position: relative;
+						    top: 2px;
+						    margin-right: 5px;
+					    }
+
+				    }
+
+				    p{
+
+					    font-size: 12px;
+					    color: #d7063b;
+					    width: 100%;
+					   @include showPoints;
+				    }
+			    }
+
+			   	.product-info-mian{
+
+				    height: 100%;
+
+				    .product-value{
+
+					    float: left;
+					    width: 588px;
+					    border-right: 1px solid #f4f4f4;
+					    background-color: #ffffff;
+					    position: relative;
+					    z-index: 1;
+						
+						.attr{
+
+						    float: left;
+						    
+						    width: 67px;
+						    color: #999;
+						}
+					    .product-value-area{
+
+						    margin: 16px 10px 10px;
+
+						    .title_img{
+						    	vertical-align: bottom;
+						    }
+
+						    .product-value-price{
+
+							    padding: 11px;
+							    background-color: #FFFAF2;
+
+							    .refer{
+
+								    color: #999;
+								    font-size: 12px;
+								    height: 18px;
+								    line-height: 18px;
+									
+									strong{
+
+									    font-weight: 100;
+									    vertical-align: 0px;
+									}
+
+								    .send{
+
+									    float: right;
+									    height: 16px;
+									    line-height: 16px;
+									    color: #9C9C9C;
+
+									    a.help_center_url{
+
+										    margin-left: 5px;
+										    color: #06c;
+									    }
+								    }
+
+								    .del{
+								    	text-decoration: line-through;
+
+								
+								    }
+							    }
+
+							    .fn-rmb{
+								    		font-family: arial;
+										    font-style: normal;
+										    padding-right: 2px;
+								    	}
+
+							    .nett{
+
+								    width: 538px;
+								    height: 24px;
+								    line-height: 24px;
+								    margin-top: 3px;
+								    clear: both;
+
+								    .attr{
+								    	margin-top: 2px;
+								    }
+
+								    strong{
+
+									    color: #d7063b;
+								    }
+
+								    q{
+
+									    font-weight: 700;
+									    color: #d7063b;
+									    line-height: 29px;
+								    }
+
+								    .nett-box{
+
+									    float: left;
+									    width: 471px;
+									    height: 24px;
+									    line-height: 24px;
+										
+										strong{
+
+										    font-size: 24px;
+										    padding-right: 9px;
+										}
+										q{
+
+										    font-size: 16px;
+										    float: left;
+										}
+									    .nett-box-value{
+									    	float: left;
+
+									    	strong.fn-rmb-num{
+									    		float: left;
+									    	}
+									    }
+
+									    i{
+
+										    font-style: normal;
+										    vertical-align: 2px;
+
+										    strong{
+
+											    font-size: 12px;
+											    padding: 0 4px;
+										    }
+									    }
+								    }
+							    }
+
+							    .vip{
+
+								    position: relative;
+								    z-index: 2;
+							    }
+						    }
+					    }
+
+					    .product-norm{
+
+							.product-button{
+
+							    height: 115px;
+							    margin-top: 8px;
+
+							    p{
+
+								    height: 40px;
+								    line-height: 40px;
+								    color: #d7063b;
+							    }
+
+							    .btn-rush{
+
+								    width: 161px;
+								    /* background-position: -141px -227px; */
+								    margin-top: 1px;
+
+								    background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat;
+								    background-position: 0px -73px;
+
+							    }
+							}
+
+					    	.add-box{
+
+							    position: relative;
+							    height: 100%;
+							    margin: 5px 0 5px 35px;
+					    	}
+					    	.add-box-null{
+
+							    margin-left: 0 !important;
+					    	}
+					    	.rush-info{
+					    		.rush-info-box{
+					    			height: 24px;
+								    line-height: 24px;
+								    width: 100%;
+								    text-overflow: ellipsis;
+								    overflow: hidden;
+								    white-space: nowrap;
+					    		}
+
+					    		.rush-info-open{
+
+								    float: right;
+								    color: #999;
+
+								    em{
+								    	    color: #06c;
+								    }
+
+									em.red{
+
+									    color: #d7063b;
+									}
+
+									.angle{
+
+									    border-width: 4px 4px 0px 4px;
+									    border-color: #06C #FFF;
+									}
+					    		}
+
+					    		.angle{
+
+								    margin-left: 3px;
+								    position: relative;
+								    top: -2px;
+					    		}
+				    		} 
+					    	.rush{
+					    		.attr{
+					    			margin-top: 3px;
+					    		}
+					    	}
+					    	.public-pl67{
+
+							    padding-left: 63px;
+
+							    .attr{
+							    	margin-left: -67px;
+							    }
+					    	}
+					    	.product-minheight{
+
+							    min-height: 238px;
+
+							    dl{
+							    	margin-top: 10px;
+							    	margin-bottom: 5px;
+							    }
+
+							    .product-number{
+
+								    height: 33px;
+								    /* margin-top: 2px; */
+
+								    dt{
+								    	line-height: 33px;
+								    }
+
+								    input{
+
+									    padding: 5px;
+									    width: 35px;
+									    height: 20px;
+									    line-height: 20px;
+									    font-size: 18px;
+									    border: 0;
+									    float: left;
+									    text-align: center;
+									    color: #3C3C3C;
+									    font-family: Arial;
+									    border-right: 1px solid #DDD;
+									    border-left: 1px solid #DDD;
+								    }
+
+								    .no-mins{
+								    	    background-position: -85px 0px;
+									    // cursor: not-allowed;
+
+									    color: #BABABA;
+
+									    float: left;
+									    position: relative;
+									    width: 29px;
+									    height: 30px;
+									    line-height: 30px;
+									    font-size: 18px;
+									    font-weight: 700;
+									    color: #6C6C6C;
+									    font-family: monospace;
+								    }
+
+								    .add{
+
+									    float: left;
+									    position: relative;
+									    width: 29px;
+									    height: 30px;
+									    line-height: 30px;
+									    font-size: 18px;
+									    font-weight: 700;
+									    color: #6C6C6C;
+									    font-family: monospace;
+								    }
+
+								    li{
+
+										    height: 30px;
+										    line-height: 30px;
+
+										    strong{
+
+											    font-weight: 100;
+											    color: #d7063b;
+										    }
+								    }
+
+								    .number{
+
+									    float: left;
+									    height: 30px;
+									    line-height: 30px;
+									    border: 1px solid #DDD;
+									    font-size: 14px;
+									    text-align: center;
+									    font-family: Arial;
+									    margin-right: 10px;
+									    overflow: hidden;
+
+									    .mins{
+									    	color:#ddd;
+									    }
+								    }
+
+								    .attr{
+
+									    float: left;
+									    _display: inline;
+									    width: 67px;
+									    color: #999;
+								    }
+							    }
+					    	}
+
+					    	.cast{
+
+							    position: relative;
+							    padding-top: 10px;
+							    border-top: 1px dotted #CCC;
+
+							    .attr{
+							    	line-height: 26px;
+							    }
+
+							    .cast-select{
+							    	line-height: 28px;
+							    }
+
+							    .cast-point{
+
+								    line-height: 24px;
+								    color: #999;
+							    }
+					    	}
+
+					    	.service{
+
+							    line-height: 28px;
+							    margin-top: 4px;
+							    clear: both;
+					    	}
+
+					    	.product-select{
+					    		 li.select{
+
+								    border-color: #d7063b;
+								    border-style: solid !important;
+					    		 }
+				    		}
+
+				    		.product-package-info{
+				    			li{
+
+								    height: 46px;
+								    border: 1px solid #DDD;
+								    float: left;
+								    margin-right: 10px;
+								    text-align: center;
+								    position: relative;
+								    cursor: pointer;
+
+								    a{
+
+									    color: #3c3c3c;
+									    text-decoration: none;
+
+									    .price{
+
+										    height: 22px;
+										    border-bottom: 1px solid #DDD;
+										    line-height: 22px;
+										    background-color: #F1F1F1;
+										    padding-left: 10px;
+										    padding-right: 10px;
+									    }
+
+									    .num{
+
+										    line-height: 23px;
+										    font-weight: 700;
+										    font-family: Tahoma;
+									    }
+
+									    .ok{
+																					
+										    position: absolute;
+										    z-index: 0;
+										    bottom: 0px;
+										    right: 0px;
+										    width: 16px;
+										    height: 16px;
+										    
+										    top: 31px;
+											
+									    }
+								    }
+				    			}
+								.select{
+					    			border: 1px solid #d7063b;
+
+					    			.ok{
+					    				background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat;
+										    
+										    background-position: 0 0;
+					    			}
+					    		}
+				    		} 
+					    }
+				    }
+
+				    .product-evaluate{
+
+					    width: 200px;
+					    float: left;
+					    position: absolute;
+					    top: 0;
+					    right: 0;
+					    z-index: 0;
+
+					    .side-public{
+
+						    margin-bottom: 15px;
+
+						    .side-title{
+
+							    background: #fcfcfc;
+							    border-bottom: 1px solid #f1f1f1;
+
+							    .title{
+
+								    height: 35px;
+								    line-height: 35px;
+								    padding-left: 20px;
+								    font-family: Microsoft YaHei;
+								    color: #666;
+								    float: left;
+							    }
+
+							    .side-barter{
+
+								    float: right;
+								    line-height: 35px;
+								    height: 35px;
+								    padding-right: 20px;
+
+								    a.renovate{
+
+									    background: url(http://static01.fn-mart.com/product/images/detail/renovate.png?170725) no-repeat;
+									    padding: 0 7px;
+								    }
+							    }
+
+							    .barter{
+
+								    color: #aaa;
+								    margin-left: 5px;
+							    }
+						    }
+
+
+					    }
+
+					    .side-look{
+					    	ul{
+
+							    padding: 2px 10px 1px 10px;
+							    background-color: #fff;
+					    	}
+
+					    	.look-img{
+
+							    width: 120px;
+							    height: 120px;
+							    display: block;
+							    margin: 0px auto 5px;
+
+							    img{
+
+								    width: 120px;
+								    height: 120px;
+								    vertical-align: top;
+							    }
+					    	}
+
+					    	.look-title{
+
+							    overflow: hidden;
+							    white-space: nowrap;
+							    text-overflow: ellipsis;
+							    text-align: center;
+
+							    a:hover{
+
+								    color: #d7063b;
+								    text-decoration: none;
+							    }
+					    	}
+
+					    	.look-price{
+
+							    color: #d7063b;
+							    text-align: center;
+
+							    del{
+
+								    color: #999;
+								    margin-left: 5px;
+							    }
+					    	}
+					    }
+				    }
+			   	}
+		    }
+
+		    .product-gallery{
+
+			    width: 398px;
+			    border-right: 1px solid #F2F2F2;
+		    }
+    	}
+
+    	.product-about{
+
+		    position: relative;
+    	}
+	}
+}
+
+
+.cast_info{
+	width: 100%;
+
+	li{
+		line-height: 24px;
+		color: #999;
+
+		p{
+			a.blue{
+				i{
+
+				    font-style: normal;
+				    padding-left: 2px;
+				}
+			}
+		}
+	}
+	.info_wrap{
+		width: 200px;
+		height: 24px;
+		border: 1px solid #e9e9e9;
+		line-height: 24px;
+		
+		.curAdd{
+			padding-left: 5px;
+			color: #3c3c3c;
+			line-height: 24px;
+			em{
+				font-style: normal;
+			    font-weight: 500;
+			}
+			i{
+							
+			    width: 21px;
+			    height: 24px;
+			    background: url(http://static01.fn-mart.com/img/area-xxyy.png?170726) no-repeat -9px -24px;
+			    font-style: normal;
+			    display: inline-block;
+			   float: right;
+			    cursor: pointer;
+			}
+		}
+	}
+}
+
+.blue{
+	color: #06c;
+}
+
+.gray{
+
+    padding: 0px 5px;
+    color: #3C3C3C;
+}
+
+.sevice{
+
+    line-height: 28px;
+    margin-top: 4px;
+    clear: both;
+
+    dd{
+
+	    float: left;
+	    width: 465px;
+	    margin-bottom: 11px;
+    }
+
+    a{
+
+	    float: left;
+	    height: 26px;
+	    margin-right: 10px;
+	    margin-bottom: 5px;
+	    padding: 0 8px;
+	    line-height: 26px;
+	    border: 1px solid #DDD;
+	    color: #3C3C3C;
+
+	    i{
+
+		    float: left;
+		    margin-right: 5px;
+		    color: #FFB346;
+		    font-size: 14px;
+	    }
+
+	    span{
+	    	line-height: 26px;
+	    	color: #3C3C3C;
+	    }
+    }
+
+    .seven{
+
+    font-size: 18px;
+    margin-right: 2px;
+    }
+}
+
+.fn-icon{
+
+    display: inline-block;
+    font-family: "fn-icon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+
+
+.product-gallery{
+
+    width: 398px;
+    border-right: 1px solid #F2F2F2;
+
+    .product-photo{
+
+	    position: relative;
+	    width: 398px;
+	    height: 490px;
+	    border-bottom: 1px solid #F2F2F2;
+	    background-color: #FFF;
+	    z-index: 2;
+	    zoom: 1;
+
+	    .product-img{
+
+		    position: relative;
+		    width: 398px;
+		    height: 398px;
+
+		    img{
+
+			    width: 398px;
+			    height: 398px;
+		    }
+
+		    .cursor-block{
+		    	display: none;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 250px;
+			    height: 250px;
+			    background-color: #000;
+			    opacity: .3;
+			    filter: alpha(opacity=30);
+			    z-index: 2;
+		    }
+
+		    .mask{
+		    	position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    z-index: 3;
+			    cursor: move;
+		    }
+	    }
+
+	    .product-small-img{
+
+		    width: 380px;
+		    height: 73px;
+		    overflow: hidden;
+		    margin: 3px 9px 0px;
+			
+			.pic-hide-box{
+				float: left;
+
+			    position: relative;
+			    width: 350px;
+			    height: 73px;
+			    overflow: hidden;
+
+			    .small-pic{
+
+				    left: 0px;
+				    width: 700px;		  				  	
+				    position: absolute;
+				    width: 350px;
+				    overflow: hidden;
+
+				    .small-pic-li{
+
+					    float: left;
+					    width: 60px;
+					    height: 63px;
+					    overflow: hidden;
+					    margin: 0 5px;
+					    padding-top: 10px;
+
+					    a{
+
+						    display: block;
+						    width: 58px;
+						    height: 58px;
+						    border: 1px solid #F1F1F1;
+					    }
+
+
+
+					    img{
+
+						    display: block;
+						    width: 58px;
+						    height: 58px;
+					    }
+				    }
+
+				    .active{
+				    	a{
+				    		    position: relative;
+						    border-color: #d7063b;
+				    	}
+
+				    	i{
+					    	top: -9px;
+						    left: 25px;
+						    position: absolute;
+						    width: 0;
+						    height: 0;
+						    overflow: hidden;
+						    line-height: 0;
+						    font-size: 1px;
+						    border-width: 4px;
+						    border-color: #fff white #d7063b #fff;
+						    border-style: solid;
+					    }
+				    }
+			    }
+			}
+		    .next-left{
+		    	margin-right: 3px;
+				background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat;
+
+			    background-position: -151px -41px;
+				&.disabled{
+
+				    background-position: -151px -41px;
+				    cursor: not-allowed !important;
+				}
+		    }
+
+		    .next-right{
+		    	margin-left: 3px;
+		    	background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat;
+			    background-position: -190px -41px;
+		    }
+
+		    .next-btn{
+				float: left;
+			    display: block;
+			    width: 12px;
+			    height: 21px;
+			    cursor: pointer;
+			    margin-top: 30px;
+		    }
+	    }
+
+	    .big-pic{
+
+		    display: none;
+		    width: 500px;
+		    height: 500px;
+		    border: 1px solid #F2F2F2;
+		    background-color: #FFF;
+		    position: absolute;
+		    top: -1px;
+		    left: 399px;
+		    overflow: hidden;
+		    z-index: 12;
+		    zoom: 1;
+
+		    img{
+		    	position: absolute;
+		    	left: 174px;
+		    }
+	    }
+    }
+
+    .collect{
+
+	    margin-top: 7px;
+	    height: 22px;
+	    line-height: 22px;
+
+	    a{
+
+		    color: #6C6C6C;
+	    }
+
+	    .collect-ico{
+
+		    display: block;
+		    width: 13px;
+		    height: 12px;
+		    float: left;
+		    margin: 5px 2px 0 10px;
+	    }
+    }
+}
+
+.collect-ico-null{
+
+    background-position: -17px 0;
+}
+
+
+.product-about{
+	position: relative;
+
+	.product-side{
+		width: 210px;
+
+		.side-public{
+
+		    border: 1px solid #F1F1F1;
+		    margin-bottom: 15px;
+
+		    .title{
+
+			    height: 35px;
+			    line-height: 35px;
+			    font-size: 14px;
+			    padding-left: 20px;
+			    font-family: Microsoft YaHei;
+			    border-bottom: 1px solid #DDD;
+			    background: #EEE;
+			    font-weight: 700;
+			    overflow: hidden;
+		    }
+
+		    .side-related-inner{
+		    	padding: 10px 0 10px 15px;
+
+		    	a{
+
+				    display: block;
+				    width: 96px;
+				    height: 24px;
+				    line-height: 24px;
+				    float: left;
+				    _margin-right: -3px;
+				    color: #6C6C6C;
+				    overflow: hidden;
+				    white-space: nowrap;
+				    text-overflow: ellipsis;
+		    	}
+		    }
+		}
+
+		.side-look{
+
+			.sale-area{
+
+			    padding: 15px 0 5px;
+			}
+
+			.look-title{
+
+			    overflow: hidden;
+			    line-height: 14px;
+			    margin-bottom: 4px;
+			    width: 118px;
+			    height: 28px;
+			    color: #333;
+			    font-size: 12px;
+			}
+		}
+
+		.sale-tab{
+
+		    border-bottom: solid 1px #ddd;
+		    padding: 0px 5px 0 10px;
+
+		    ul{
+
+			    overflow: hidden;
+			    margin-bottom: -1px;
+		    }
+
+		    li{
+
+			    float: left;
+			    padding: 3px 10.6px 1px;
+			    border: solid 1px #ddd;
+			    margin-right: 5px;
+			    background: #eee;
+			    cursor: pointer;
+		    }
+
+		    .active{
+
+			    color: #d7063b;
+			    background: #fff;
+			    border-bottom-color: #fff;
+		    }
+		}
+
+		.sale-shop{
+
+		    background: url(http://static01.fn-mart.com/product/images/detail/sale_top.png?170725) no-repeat 164px 37px;
+		    margin-top: -1px;
+		    padding: 0 10px;
+
+		    li{
+
+			    border-top: solid 1px #f1f1f1;
+				
+				a.look-img{
+
+				    color: #3C3C3C;
+				}
+
+				.look-img{
+
+				    width: 188px;
+				    height: 60px;
+				    display: block;
+				    padding: 10px 0;
+
+				    img{
+
+					    width: 60px;
+					    height: 60px;
+					    vertical-align: top;
+					    float: left;
+				    }
+
+				    .sale-item{
+
+					    float: left;
+					    margin-left: 10px;
+					    padding-top: 2px;
+				    }
+				}
+		    }
+		}
+
+		.look-price{
+
+			    color: #d7063b;
+		}
+	}
+
+	.side-seo-commentbrand,.side-seo-words{
+		    padding: 10px 0 10px 15px;
+
+		    a{
+
+			    display: block;
+			    width: 96px;
+			    height: 24px;
+			    line-height: 24px;
+			    float: left;
+			    _margin-right: -3px;
+			    color: #6C6C6C;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+		    }
+	}
+
+
+	.product-detail{
+				
+	    width: 970px;
+	    margin-left: 10px;
+
+	    .detail-package{
+	    	margin-bottom: 15px;
+	    }
+
+	    .detail-tab{
+
+			    height: 37px;
+			    width: 970px;
+			    position: relative;
+			    z-index: 1;
+	    }
+
+	    .tab{
+
+		    background-color: #FFF;
+		    border-bottom: 1px solid #d7063b;
+		    width: 970px;
+		    top: 0;
+
+		    .tab-bottn{
+		    	float: right;
+		    }
+
+
+		    .tab-toggle{
+
+			    display: block;
+			    padding: 0 30px;
+			    height: 34px;
+			    line-height: 34px;
+			    font-size: 14px;
+			    float: left;
+			    margin-top: 2px;
+			    border: 1px solid #DDD;
+			    border-bottom: none;
+			    margin-right: -1px;
+			    text-align: center;
+			    background-color: #EEE;
+			    font-family: Microsoft YaHei;
+			    color: #3C3C3C;
+			    transition: background 0.2s ease-in-out;
+			    -webkit-transition: background 0.2s ease-in-out;
+
+			    h4{
+
+				    font-size: 100%;
+				    font-weight: 500;
+			    }
+		    }
+
+		    .tab-cur{
+
+			    background-color: #d7063b;
+			    color: #FFF;
+			    border: 0 none;
+			    height: 37px;
+			    line-height: 37px;
+			    margin-top: 0;
+			    font-size: 16px;
+			    margin-right: 0;
+			    font-weight: 700;
+		    }
+
+		    .tab-inner{
+		    	em{
+
+				    color: #06C;
+		    	}
+		    }
+	    }
+
+
+	    .detail-public{
+
+		    overflow: hidden;
+		    border-top: none;
+		    margin-top: 1px;
+		    z-index: 0;
+		    margin-bottom: 15px;
+		    position: relative;
+	    }
+
+	    .detail-depict{
+
+		    margin-top: 1px;
+		    border: 1px solid #f1f1f1;
+		    border-top: 0 none;
+	    }
+
+	    .depict-left{
+
+			    width: 768px;
+			    padding: 0 100px;
+			    padding-bottom: 10px;
+
+			    img{
+
+				    max-width: 768px;
+				    vertical-align: top;
+			    }
+	    }
+
+	    .depict-text{
+
+		    margin: 20px 20px 20px -80px;
+		    padding-bottom: 20px;
+		    border-bottom: 1px solid #EEE;
+		    text-align: left;
+		    width: 930px;
+		    zoom: 1;
+		    clear: both;
+		    overflow: hidden;
+
+		    .depict-text-title{
+
+			    font-size: 12px;
+			    font-weight: 700;
+		    }
+
+		    .depict-list{
+		    	li{
+
+					float: left;
+					width: 295px;
+					height: 24px;
+					line-height: 24px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					margin-right: 15px;
+		    	}
+		    }
+
+		    .sim_norms{
+		    	float: right;
+		    }
+	    }
+	}
+}
+
+
+.fl{
+	float: left;
+}
+
+.product-about .depict-right{
+
+    width: 190px;
+    height: 100%;
+    display: none;
+}
+
+.audit-btnArea{
+	
+    margin: 0 auto;
+    width: 148px;
+    overflow: hidden;
+}
+.audit{
+	position: relative;
+	margin-top: 40px;
+
+	a.audit-btn{
+		background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat;
+	    background-position: -160px -420px;
+	    width: 148px;
+	    height: 25px;
+	    line-height: 26px;
+	    font-size: 12px;
+	    text-align: center;
+	    color: #FFF;
+	    margin: 6px 12px 0 0;
+	    display: block;
+	    padding-top: 20px;
+	    z-index: 0;
+	    position: absolute;
+	    background-color: #fff;
+	    top: -30px;
+	    cursor: pointer;
+	}
+
+	h5.audit-tilte{
+
+	    width: 0;
+	    height: 0;
+	    font-size: 0;
+
+	}
+
+	a.audit-btn .audit-up{
+		background: url(http://static01.fn-mart.com/product/images/detail/sprite.png?170725) no-repeat;
+	    background-position: -356px -4px;
+	}
+
+	a.audit-btn .audit-icon{
+
+	    width: 8px;
+	    height: 4px;
+	    display: block;
+	    margin-left: 115px;
+
+
+	}
+}
+
+.audit-txt{
+
+    /* display: none; */
+    border: solid 1px #f1f1f1;
+    border-radius: 2px;
+    padding: 32px 30px 18px;
+    top: 25px;
+    line-height: 19px;
+}
+
+
+
+// 提示框
+
+.dp_dialog{
+
+    width: 480px;
+    overflow: hidden;
+    border: 5px #c4c4c4 solid;
+    font: 12px simsun;
+    background: #fff;
+
+    .dp_dialog_title{
+
+	    height: 33px;
+	    border-bottom: 1px #ddd solid;
+	    background: #eee;
+
+	    .tlt{
+
+		    display: inline-block;
+		    height: 33px;
+		    line-height: 33px;
+		    color: #3c3c3c;
+		    text-indent: 12px;
+		    font-size: 14px;
+		    font-weight: 700;
+		    float: left;
+	    }
+
+	    .dp_dialog_close{
+
+		    display: block;
+		    width: 28px;
+		    height: 33px;
+		    background: url(http://static01.fn-mart.com/item_mall/public/images/dialog/dialog-close.gif) no-repeat;
+		    float: right;
+		    cursor: pointer;
+	    }
+    }
+
+    .dp_dialog_content{
+
+	    padding: 15px 0 15px 16px;
+	    overflow: hidden;
+
+	    em.right_notice{
+
+		    display: inline-block;
+		    width: 32px;
+		    height: 32px;
+		    background: url(http://static01.fn-mart.com/item_mall/public/images/dialog/dialog-right.gif) no-repeat;
+		    float: left;
+		    padding-right: 10px;
+		    margin-left: 10px;
+	    }
+
+	    .dialog_notice{
+
+		    margin-bottom: 18px;
+		    padding-top: 8px;
+		    padding-left: 4px;
+		    font-size: 14px;
+		    font-weight: 700;
+		    color: #3c3c3c;
+	    }
+
+	    .jxShopping{
+
+		    display: inline-block;
+		    width: 80px;
+		    height: 28px;
+		    text-align: center;
+		    line-height: 28px;
+		    color: #3c3c3c;
+		    background: url(http://static01.fn-mart.com/item_mall/public/images/dialog/jxShopping.gif) no-repeat;
+		    cursor: pointer;
+		    float: left;
+		    margin-left: 52px;
+		    margin-right: 10px;
+		    margin-bottom: 30px;
+	    }
+
+	    .gwcPay{
+
+		    background: #C70034;
+		    display: inline-block;
+		    width: 123px;
+		    height: 28px;
+		    text-align: center;
+		    line-height: 28px;
+		    color: #fff;
+		    // background: url(http://static01.fn-mart.com/item_mall/public/images/dialog/gwcPay.gif) no-repeat;
+		    cursor: pointer;
+		    float: left;
+		    margin-bottom: 30px;
+	    }
+
+	    .show_title{
+
+		    padding-left: 4px;
+		    font-size: 12px;
+		    color: #6c6c6c;
+		    clear: both;
+	    }
+
+	    .dialog_showBox{
+
+		    margin-top: 15px;
+		    overflow: hidden;
+
+		    .showDiv{
+
+			    width: 100px;
+			    float: left;
+			    display: inline;
+			    margin-right: 16px;
+
+			    img{
+
+				    width: 98px;
+				    height: 98px;
+				    border: 1px #ddd solid;
+			    }
+
+			    p{
+
+				    margin-top: 5px;
+				    font-size: 12px;
+				    line-height: 17px;
+				    height: 34px;
+				    overflow: hidden;
+
+				    a[style]{
+
+					    color: #C20053!important;
+				    }
+			    }
+
+			    .price{
+
+				    font-family: "microsoft yahei";
+					
+					strong{
+
+					    color: #C70034;
+					}
+				    del{
+
+				    }
+			    }
+		    }
+	    }
+    }
+}

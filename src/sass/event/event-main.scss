@@ -1,0 +1,249 @@
+.event_wrap{
+	width: 100%;
+    background: none repeat scroll center top #e06969;
+	.full_screen{
+			width: 2000px;
+		    position: relative;
+		    top: 0;
+		    left: 50%;
+		    margin-left: -1000px;
+	}
+
+	.top_bg{
+		width: 100%;
+		position: relative;
+
+		.full_screen{
+		    background: url(http://img17.fn-mart.com/pic/540e133e8447dcaa4f93/KzHz2272DzCdBMVgO2/7imyea_aQyPGc9/CsmRsVm3OqSAFJczAAw8s8Wlu3M564.jpg) no-repeat scroll center top;
+		    height: 899px;
+		    
+		}
+	}
+
+	.load_bg{
+		width: 100%;
+		position: relative;
+
+		.full_screen{
+		    background: url(http://img18.fn-mart.com/pic/f05a133e8443dcb077fe/hTqnzz7TvnfdkMUdjn/5xmRoaDRcGPRQx/CsmRslm3Ot-AdlshAAPiUASnjfk869.jpg) no-repeat scroll center top;
+		    height: 389px;
+		    
+		}
+	}
+
+	.getMoonCake_bg{
+		width: 100%;
+		position: relative;
+
+		.full_screen{
+			background: url(http://img17.fn-mart.com/pic/e6fe133e84442a699ea0/Bn82TTs2FTflBdUdjn/1xmGSGvyQGXGdR/CsmRsVm3qtGAd6MwAAG6w6jJZ8U835.jpg) no-repeat scroll center top;
+		    height: 544px;
+
+		    a{
+		    	display: block;
+
+		    	img{
+
+				    width: 1920px;
+				    height: 544px;
+				    margin: 0px auto;
+		    	}
+		    }
+		}
+	}
+
+	.getquan_bg{
+		width: 100%;
+		position: relative;
+
+
+	}
+	.slim_screen{
+			
+	    width: 990px;
+	    margin: 0 auto;
+	}
+
+	.spe_cont,.good_cont{
+		overflow: hidden;
+		ul{
+			overflow: hidden;
+		    width: 996px;
+		}
+		a{
+			display: block;		
+		    width: 243px;
+		    margin-right: 6px;
+		    margin-bottom: 6px;
+		    float: left;
+		}
+	}
+
+	.tt{
+		height: 100px;
+	}
+
+	.hot_cont,.one_cont,.gift_cont{
+		overflow: hidden;
+		.lst{
+			overflow: hidden;
+		    width: 990px;
+		    height: 40px;
+		    line-height: 40px;
+		    padding-top: 10px;
+
+		    li{
+		    	float: left;
+		    	background: rgb(224, 105, 105);
+		    	font-size: 16px;
+				height: 100%;
+			    width: 247.5px;
+			    text-align: center;
+			    color: #fff;
+			    cursor: pointer;
+
+			    &:hover{
+				    color: rgb(125, 23, 125);
+			    }
+
+			    p{
+					font-size: 16px;
+				    padding: 0 10px;
+				    overflow: hidden;
+				    text-overflow: ellipsis;
+				    -o-text-overflow: ellipsis;
+				    white-space: nowrap;
+			    }
+		    }
+
+		    li.one{
+		    	width: 33.33333333%;
+		    }
+		}
+		
+		.hide{
+			display: none;
+		}
+
+		.detail_cont{
+			padding-left: 10px;
+			padding-top: 10px;
+			li{
+				width: 235px;
+				height: 354px;
+				background: #fff;
+				float: left;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				position: relative;
+				transition: all .2s;
+				top: 0;
+
+				&:hover{
+					top: -5px;
+				}
+
+				img{
+
+				    width: 235px;
+				    height: 235px;
+				}
+
+				.info{
+
+				    line-height: 12px;
+				    height: 34px;
+				    overflow: hidden;
+				    margin-top: 10px;
+
+				    h3{
+											
+					    font-size: 100%;
+					    font-weight: 500;	
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    -o-text-overflow: ellipsis;
+					    white-space: nowrap;
+					    margin: 0 10px;
+					    height: 12px;
+				    }
+
+				    p{
+						overflow: hidden;
+					    text-overflow: ellipsis;
+					    -o-text-overflow: ellipsis;
+					    white-space: nowrap;
+					    color: #c70034;
+					    margin: 10px 10px 0;
+					    height: 12px;
+				    }
+				}
+
+				.price{
+
+				    line-height: 18px;
+				    margin: 10px;
+
+				    .now{
+				    	color: #c70034;
+
+				    	em{
+				    		font-size: 14px;
+				    	}
+
+				    	.num{
+				    		font-size: 20px;
+				    	}
+				    }
+				}
+
+				.btn{
+
+				    margin: 0 4px 4px 4px;
+				    display: block;
+				    background: #d7063b;
+				    color: #fff;
+				    line-height: 30px;
+				    text-align: center;
+				    text-decoration: none;
+				}
+			}
+			
+
+		}
+	}
+}
+
+
+.floatRt{
+
+    left: 50%;
+    margin-left: 510px;
+    top: 100px;
+    position: fixed;
+    z-index: 9999;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+
+    img{
+		/* opacity: 0; */
+	    width: 140px;
+		height: 352px;
+	    display: block;
+	    margin-bottom: 1px;
+	    
+    }
+
+    map{
+    	position: absolute;
+    	top: 0;
+
+    	area{
+    		position: absolute;
+    		width: 140px;
+    		height: 40px;
+    		
+    	}
+    }
+}

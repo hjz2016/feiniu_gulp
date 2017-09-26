@@ -79,11 +79,10 @@ define(function(){
             for(var i = this.index * this.showNum , good; i < (this.index + 1)* this.showNum; i++){
                 if( i < Pagination.res.length){
                 	good = Pagination.res[i];
-                    html += `<li class="prod">
+                    html += `<li class="prod" data-id="${i}">
                             <div class="p_tab">
                                 <!-- 1单品多件，商品头部的数量 -->
                             </div>
-                            <div class="p_cont">
                             <div class="p_cont">
                                 <div class="p_panel ">
                                     <div class="p_img">
@@ -101,7 +100,7 @@ define(function(){
                                         </span>
                                     </div>
                                     <div class="p_name">
-                                        <a href="javascript:;" title="">${good.brand} 
+                                        <a href="javascript:;" title="${good.brand+good.tt}"">${good.brand} 
                                         	<em class="z-red">${getCookie('type')}</em>
                                         	 ${good.tt}
                                        	</a>
@@ -131,7 +130,6 @@ define(function(){
                                         <a href="javascript:;" class="m_none">${good.store}</a>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </li>`;
                 } 

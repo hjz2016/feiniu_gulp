@@ -30,3 +30,7 @@ button, input, select, textarea{
     font-size: 100%;
     outline: 0;
 }
+
+strong{
+    font-weight: bold;
+}

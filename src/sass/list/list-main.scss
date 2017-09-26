@@ -143,7 +143,7 @@ $hoverC:#d7063b;
 			    border-top: 1px dotted #ddd;
 			    background: #f7f7f7;
 			    position: relative;
-			    z-index: 3;
+			    // z-index: 3;
 			    zoom: 1;
 
 			    .item_key{
@@ -649,7 +649,7 @@ $hoverC:#d7063b;
 
 		    .goods_filter{
 	    	    position: relative;
-			    z-index: 2;
+			    // z-index: 2;
 
 				.topa{
 					    background: #e5e5e5 !important;
@@ -947,7 +947,7 @@ $hoverC:#d7063b;
 		    	height: auto;
 			    position: relative;
 			    margin-bottom: 20px;
-			    z-index: 1;
+			    // z-index: 1;
 			    overflow: hidden;
 			    min-height: 800px;
 
@@ -963,7 +963,7 @@ $hoverC:#d7063b;
 					    background: #fff;
 					    border: 1px solid #fff;
 					    margin-bottom: 20px;
-					    z-index: 1;
+					    // z-index: 1;
 					    @include bc_trans;
 
 					    &:hover{

@@ -111,3 +111,255 @@
 		}
 	}
 }
+
+
+// 购物车
+
+.hide_cart{
+	.killAll{
+		padding:5px;
+		border-bottom:1px solid #ccc;
+		overflow:hidden;
+		a{
+			float:right;
+			font-weight:bold;
+
+			&:hover{
+				color:#d7063b;
+			}
+		}
+	}
+}
+
+.cart_items_wp{
+
+    width: 288px;
+    height: auto;
+    position: relative;
+
+    .items{
+
+	    width: 288px;
+	    height: auto!important;
+	    max-height: 402px;
+	    overflow-y: auto;
+	    position: relative;
+	    background: #E9E9E9;
+
+	    dl{
+	    	margin-bottom: 15px;
+	    	background:#fff;
+
+	    	.dl_tt{
+
+			    height: 29px;
+			    line-height: 29px;
+			    padding: 0 15px;
+			    border-bottom: 1px solid #E9E9E9;
+
+			    a{
+
+				    color: #666;
+				    font-size: 12px;
+			    }
+	    	}
+
+	    	.dl_lst{
+
+			    height: auto;
+
+			    .lst_wp{
+
+				    height: auto;
+				    border-bottom: 1px dotted #aaa;
+				    padding: 10px 15px;
+				    position: relative;
+				    zoom: 1;
+
+				    .del_icon{
+						margin-right:10px;
+					    cursor: pointer;
+					    width: 11px;
+					    height: 11px;
+					    overflow: hidden;
+					    position: absolute;
+					    top: 5px;
+					    right: 0;
+					    background: url(http://static01.fn-mart.com/product/images/index/fn_g_header.png?170725) -123px -96px no-repeat;
+					    display: none;
+				    }
+
+				    .img{
+						float:left;
+						margin-right: 5px;	    	
+					    width: 50px;
+					    height: 50px;
+
+					    a{
+
+						    display: block;
+						    width: 50px;
+						    height: 50px;
+
+						    img{
+
+							    vertical-align: top;
+						    }
+					    }
+				    }
+
+				    .item_tt{
+
+					    position: relative;
+					    height: 15px;
+					    line-height: 15px;
+					    margin-bottom: 6px;
+
+					    a{
+
+						    display: block;
+						    color: #666;
+						    font-size: 12px;
+						    width: 178px;
+						    height: 16px;
+						    line-height: 16px;
+						    text-align: left;
+						    overflow: hidden;
+					    }
+				    }
+
+				    .num_fn{
+						float:left;	    	
+					    display: block;
+					    text-align: center;
+					    width: 53px;
+					    height: 20px;
+					    background: url(http://static01.fn-mart.com/product/images/index/fn_g_header.png?170725) -96px 0 no-repeat;
+				    	
+				    	a{
+
+						    display: block;
+						    width: 15px;
+						    height: 19px;
+						    cursor: pointer;
+				    	}
+
+				    	input{
+
+						    float: left;
+						    width: 23px;
+						    color: #333;
+						    text-align: center;
+						    vertical-align: middle;
+						    border: 0;
+						    margin-top: 1px;
+						    font-family: Tahoma;
+
+						    height: 18px;
+						    line-height: 18px;
+						    font-size: 12px;
+						    font-weight: 700;
+				    	}
+				    }
+
+				    .reduce{
+						float:left;
+					    background: url(http://static01.fn-mart.com/product/images/index/fn_g_header.png?170725) -72px -75px no-repeat;
+				    	
+					    background-position: -38px -75px;
+
+				    }
+
+				    .add{
+						float:right; 	
+					    background: url(http://static01.fn-mart.com/product/images/index/fn_g_header.png?170725) -55px -75px no-repeat;
+				    }
+
+				    .price{
+				    	margin-top:5px;
+						float:right;		    	
+					    height: 18px;
+					    line-height: 18px;
+					    font-size: 12px;
+					    font-weight: 700;
+					    color: #d7063b;
+
+					    .c_p{			    	
+						    font-family: Tahoma;
+					    }
+				    }
+			    }
+	    	}
+	    }
+    }
+
+    .counter{
+
+	    width: 260px;
+	    height: 74px;
+	    padding: 0 14px 15px;
+	    background: #E9E9E9;
+
+	    .c_top{
+			p{
+
+			    height: 34px;
+			    line-height: 34px;
+			    font-size: 14px;
+			}
+
+			.t_l{
+				float:left;
+
+				span{
+
+				    font-family: Tahoma;
+				    font-weight: 700;
+				    color: #d7063b;
+				}
+			}
+
+			.t_r{
+				float:right;
+							
+			    color: #d7063b;
+			    font-weight: 700;
+				span{
+
+				    font-family: Tahoma;
+				}
+			}
+	    }
+
+	    .c_btn{
+
+		    width: 260px;
+		    height: 40px;
+		    line-height: 40px;
+		    text-align: center;
+		    background: #d7063b;
+
+		    a{
+
+			    font-size: 14px;
+			    font-weight: 700;
+			    color: #fff;
+			    display: block;
+		    }
+	    }
+    }
+}
+
+.fixed{
+
+    display: block;
+    min-height: 1%;
+
+    &:after{
+    	    content: ".";
+	    display: block;
+	    clear: both;
+	    height: 0;
+	    visibility: hidden;
+    }
+}
