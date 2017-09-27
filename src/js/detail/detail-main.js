@@ -77,8 +77,14 @@
 
 	// 渲染主部分
 	$('.detail_main').load('html/detail/detail-main.html',function(){
+		// 引入主要功能
 		require(['component/detail/detail-fn.js'],function(detailFn){
 			detailFn.init();
+		});
+
+		// 引入次要功能
+		require(['component/detail/small-fn.js'],function(smallFn){
+			smallFn.init();
 		})
 	});
 

@@ -164,7 +164,7 @@ define(function(){
 		}
 
 		showPrompt(){
-
+			// 显示加入购物车成功提示框
 			if(this.noticeArr){
 				var noticer = this.noticeArr[1],
 					masker = this.noticeArr[0];

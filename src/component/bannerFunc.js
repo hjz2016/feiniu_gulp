@@ -39,6 +39,18 @@ define(function(){
 					$('.hide_list').hide();
 				},100)
 			});
+
+			$('.item use').each(function(i){
+				$(this).data('off',$(this).attr('xlink:href'))
+				.data('on',$(this).attr('xlink:href') + '2');
+			})
+
+			$('.item').hover(function(){
+				$(this).find('use').attr('xlink:href',$(this).find('use').data('on'))
+			},function(){
+				$(this).find('use').attr('xlink:href',$(this).find('use').data('off'))
+			})
+			
 		},
 		chooseCard(){
 			// 右侧选项卡

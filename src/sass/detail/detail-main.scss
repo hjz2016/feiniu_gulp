@@ -14,6 +14,21 @@ $hoverC:#d7063b;
     text-overflow: ellipsis;
 }
 
+.fix{
+
+    display: block;
+    min-height: 1%;
+
+    &:after{
+
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    }
+}
+
 .fn-clear{
 	zoom: 1;
 }
@@ -69,6 +84,8 @@ q:before, q:after{
     zoom: 1;
     font-family: sans-serif, 'Hiragino Sans GB';
 }
+
+
 
 .btn{
 	    display: block;
@@ -739,7 +756,12 @@ q:before, q:after{
 								    line-height: 35px;
 								    height: 35px;
 								    padding-right: 20px;
-
+									
+									&:hover{
+										.barter{
+											color:$hoverC;
+										}
+									}
 								    a.renovate{
 
 									    background: url(http://static01.fn-mart.com/product/images/detail/renovate.png?170725) no-repeat;
@@ -1174,6 +1196,10 @@ q:before, q:after{
 				    overflow: hidden;
 				    white-space: nowrap;
 				    text-overflow: ellipsis;
+
+				    &:hover{
+				    	color:$hoverC;
+				    }
 		    	}
 		    }
 		}
@@ -1287,6 +1313,10 @@ q:before, q:after{
 			    overflow: hidden;
 			    white-space: nowrap;
 			    text-overflow: ellipsis;
+
+			    &:hover{
+			    	color:$hoverC;
+			    }
 		    }
 	}
 
@@ -1357,6 +1387,10 @@ q:before, q:after{
 			    font-size: 16px;
 			    margin-right: 0;
 			    font-weight: 700;
+
+			    em.total_comment{
+					color:#fff;
+			    }
 		    }
 
 		    .tab-inner{
@@ -1376,6 +1410,569 @@ q:before, q:after{
 		    z-index: 0;
 		    margin-bottom: 15px;
 		    position: relative;
+			
+			.detail-service{
+
+			    width: 99.8%;
+			    overflow: hidden;
+			    margin-bottom: -1px;
+			    border: 1px solid #f1f1f1;
+			    border-top: 0 none;
+
+			    dl{
+
+				    border-bottom: 1px solid #F1F1F1;
+			    }
+
+			    dt{
+
+				    height: 32px;
+				    line-height: 32px;
+				    font-weight: 700;
+				    padding-left: 30px;
+				    border-bottom: 1px solid #F1F1F1;
+				    background: #FAFAFA;
+
+				    h6{
+
+					    font-weight: 700;
+				    }
+			    }
+
+			    dd{
+
+				    font-size: 12px;
+				    padding: 9px 30px 16px 30px;
+				    line-height: 26px;
+
+				    li{
+
+					    line-height: 26px;
+				    }
+
+				    a{
+
+					    display: block;
+					    color: #06c;
+					    text-decoration: underline;
+				    }
+			    }
+			}
+		    .detail-norm{
+
+			    margin-left: -1px;
+			    overflow: hidden;
+			    border: 1px solid #f1f1f1;
+			    border-top: 0 none;
+
+			    .norm-table{
+					border-spacing: 0;   	
+				    border-top: 1px solid #F1F1F1;
+				    border-bottom: 1px solid #F1F1F1;
+				    border-left: 1px solid #f1f1f1;
+				    width: 100%;
+				    border-collapse: collapse;
+				    margin-bottom: 15px;
+					tr{
+
+					    display: table-row;
+					    vertical-align: inherit;
+					    border-color: inherit;
+					}
+				    tr.title{
+
+					    background-color: #FAFAFA;
+
+					    th{
+
+						    padding-left: 30px;
+						    text-align: left;
+						    height: 32px;
+						    line-height: 32px;
+						    font-weight: 700;
+					    }
+
+
+				    }
+
+				    td{
+
+					    border: 1px solid #F1F1F1;
+					    padding-left: 30px;
+					    height: 32px;
+					    line-height: 32px;
+				    }
+
+				    td.norm-td{
+				    	width:150px;
+				    }
+			    }
+
+			    p{
+			    	    color: #3c3c3c;
+			    	    padding:5px 0;
+			    }
+		    }
+			
+			// 评价
+		    .detail-assess{
+		    	.fn-comment{
+
+				    line-height: initial;
+				    margin: 0px auto;
+				    font-family: Tahoma, 'SimSun';
+
+				    .fn-comment-title{
+
+					    height: 161px;
+					    padding: 0 20px;
+					    border: 1px solid #f1f1f1;
+					    border-top: none;
+					    overflow: hidden;
+
+					    .fn-mt{
+
+						    position: absolute;
+						    position: relative;
+						    height: 42px;
+						    padding: 0 10px;
+						    color: #888888;
+						    font: 100 15px/42px 'microsoft yahei';
+						    line-height: 42px;
+						    border-bottom: 1px solid #f1f1f1;
+
+						    .c-01{
+
+							    font-size: 12px;
+							    font-family: Tahoma, 'SimSun';
+
+							    .red{
+
+									    color: #d7063b;
+									}
+
+
+						    }
+						    .fn-mt-a{
+									position: absolute;
+								    right: 10px;
+								    top: 4px;
+								    font-size: 12px;
+								}
+					    }
+
+					    .fn-mc{
+
+						    margin: 14px 0 0 0;
+						    height: 117px;
+
+						    div[class*=fn-mc]{
+						    	height:90px;
+						    }
+
+						    .fn-mc-lt{
+
+							    float: left;
+							    width: 333px;
+							    margin: 0 5px 0 7px;
+
+							    .c-01{
+
+								    float: left;
+								    width: 105px;
+								    height: 100px;
+								    margin: 17px 0px 0 5px;
+								    text-align: center;
+								    line-height: 35px;
+
+								    strong{
+
+									    font-size: 50px;
+									    font-family: 'Arial';
+									    color: #d7063b;
+									    font-weight: 100;
+										
+								    }
+
+								    b{
+
+									    font-weight: 100;
+									    font-size: 24px;
+								    }
+
+								    p{
+
+									    margin: -11px 0 0 0;
+									    color: #888888;
+								    }
+							    }
+
+							    dl{
+
+									    float: right;
+									    position: relative;
+									    width: 192px;
+									    line-height: 10px;
+									    margin-top: 15px;
+
+									dd{
+
+									    float: left;
+									    width: 72px;
+									    color: #3c3c3c;
+
+									    span{
+
+										    color: #888888;
+									    }
+									}
+
+									dt{
+
+									    float: left;
+									    margin: 0 0 15px 5px;
+									    width: 100px;
+									    background: #efefef;
+									    height: 10px;
+
+									    div{
+
+										    height: 10px;
+										    background: #d7063b;
+									    }
+									}
+							    }
+						    }
+
+						    .fn-mc-ce{
+
+							    float: left;
+							    width: 345px;
+							    padding: 0px 0 0 20px;
+							    border-left: 1px solid #f1f1f1;
+
+							    p{
+
+								    margin: 11px 0 8px 0;
+							    }
+
+							    .fn-comment-yun{
+
+								    height: 50px;
+								    overflow: hidden;
+
+								    li{
+
+									    float: left;
+									    height: 18px;
+									    padding: 2px 4px;
+									    margin: 0 5px 5px 0;
+									    color: #666;
+									    font: 12px/18px Tahoma, 'SimSun';
+									    text-align: center;
+									    white-space: nowrap;
+									    background: #fff6df;
+									    border-radius: 0 0 5px;
+								    }
+							    }
+						    }
+
+						    .fn-mc-rt{
+
+							    float: right;
+							    width: 190px;
+							    padding-left: 20px;
+							    border-left: 1px solid #f1f1f1;
+
+							    .btn{
+							    	width: 116px;
+								    height: 28px;
+								    background: #fefefe;
+								    background: -webkit-linear-gradient(#fefefe, #ededed);
+								    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#ededed));
+								    background: linear-gradient(#fefefe, #ededed);
+								    border: 1px solid #ddd;
+								    cursor: pointer;
+								    border-radius: 3px;
+								    font-size: 100%;
+								    float: none;
+
+								    &:hover{
+								    	background: linear-gradient(#eeeeee, #fefefe);
+								    }
+							    }
+
+							    .double_points{
+							    	margin-top: 8px;
+
+							    	span{
+
+									    color: #d7063b;
+							    	}
+
+							    	a:hover{
+							    		text-decoration:underline; 
+							    	}
+							    }
+
+							    a{
+
+								    color: #06c;
+							    }
+						    }
+					    }
+				    }
+
+				    .fn-comment-list{
+
+				    	.fn-mt{
+
+						    border-bottom: 1px solid #f1f1f1;
+						    position: relative;
+
+						    li{
+
+							    float: left;
+							    width: 115px;
+							    height: 41px;
+							    text-align: center;
+							    font: 100 15px/48px 'microsoft yahei';
+							    cursor: pointer;
+						    }
+
+						    li.on{
+
+							    margin-bottom: -1px;
+							    color: #d7063b;
+						    }
+
+						    .fn-mt-bor{
+
+							    -webkit-transition: 0.3s;
+							    transition: 0.3s;
+							    position: absolute;
+							    bottom: -1px;
+							    left: 0;
+							    width: 115px;
+							    border-bottom: 2px solid #d7063b;
+						    }
+				    	}
+
+				    	#J_show_comment{
+				    		.fn-mc-bk{
+
+							    position: relative;
+							    margin: 16px 0 0 0;
+
+							    .bk-img{
+
+								    position: absolute;
+								    left: 0;
+								    width: 115px;
+								    text-align: center;
+
+								    .avatar_bg{
+
+									    width: 72px;
+									    height: 72px;
+									    background: 0 0;
+									    display: inline-block;
+									    border: 1px solid #eee;
+									    border-radius: 50%;
+
+									    img{
+
+										    margin-top: 7px;
+										    width: 58px;
+										    height: 58px;
+										    border-radius: 50%;
+									    }
+								    }
+
+								    h3{
+
+									    font-weight: 100;
+									    color: #3c3c3c;
+									    margin-top: 10px;
+									    overflow: hidden;
+									    text-overflow: ellipsis;
+									    white-space: nowrap;
+								    }
+							    }
+
+							    .bk-r{
+
+								    -webkit-transition: 0.5s;
+								    transition: 0.5s;
+								    position: relative;
+								    margin-left: 115px;
+								    padding: 0px 19px 18px 19px;
+								    border: 1px solid #f1f1f1;
+
+								    .poptip_left{
+
+									    left: -12px;
+									    top: 20px;
+
+									    em{
+
+										    border-right-color: #f1f1f1;
+										    border-width: 12px 12px 12px 0;
+										    left: -1px;
+										    top: 0;
+									    }
+
+									    span{
+
+										    border-right-color: #fff;
+										    border-width: 12px 12px 12px 0;
+									    }
+								    }
+
+								    .ui_poptip_arrow em,.ui_poptip_arrow span{
+
+									    position: absolute;
+									    width: 0;
+									    height: 0;
+									    border-color: rgba(255, 255, 255, 0);
+									    border-style: solid;
+									    border-color: transparent\0;
+									    overflow: hidden;
+									    top: 0;
+									    left: 0;
+								    }
+
+								    .bk-title{
+
+									    padding: 12px 0;
+									    margin-bottom: 11px;
+									    border-bottom: 1px solid #f1f1f1;
+
+									    .fn-comment-star{
+									    	float:left;
+
+									    	.star-01{
+
+											    display: inline-block;
+											    margin: 0;
+											    font-style: normal;
+											    vertical-align: middle;
+											    overflow: hidden;
+											    position: relative;
+											    background-image: url(http://static01.fn-mart.com/product/images/detail/sprite_comment_icon.png?170725);
+									    	}
+									    }
+
+									    .star-01{
+
+										    width: 20px;
+										    height: 19px;
+										    background: -77px 0;
+									    }
+
+									    .bk-title-time{
+
+										    float: right;
+										    color: #9c9c9c;
+									    }
+								    }
+
+								    .bk-mc{
+								    	dl{
+								    		dd{
+
+											    float: left;
+											    width: 60px;
+											    line-height: 22px;
+											    color: #888888;
+								    		}
+
+								    		dt.fix{
+
+											    margin-bottom: 0px;
+											    max-height: 462px;
+								    		}
+
+								    		dt{
+
+											    position: relative;
+											    margin: 0 0 -3px 60px;
+											    min-height: 22px;
+											    line-height: 22px;
+											    color: #666;
+											    overflow: hidden;
+								    		}
+
+								    		.specification li{
+								    			background:#fff;
+								    		}
+
+								    		.fn-comment-yun li{
+
+											    float: left;
+											    height: 18px;
+											    padding: 2px 4px;
+											    margin: 0 5px 5px 0;
+											    color: #666;
+											    font: 12px/18px Tahoma, 'SimSun';
+											    text-align: center;
+											    white-space: nowrap;
+											    background: #fff6df;
+											    border-radius: 0 0 5px;
+								    		}
+								    	}
+
+								    	.fn-comment-ignite{
+								    		position: relative;
+										    z-index: 0;
+										    text-align: right;
+										    background: #fff;
+
+										    a{
+
+												    display: inline !important;
+												    text-decoration: none!important;
+												    padding: 3px 0px 3px 7px;
+												    border-radius: 2px;
+												    border: 1px solid transparent;
+												
+											    color: #666;
+
+											    &:hover{
+
+												    color: #d7063b;
+												    cursor: pointer;
+												    border-color: #d7063b;
+											    }
+
+											    i{
+
+												   
+											    }
+
+											    .ignite{
+																								
+												    width: 13px;
+												    height: 13px;
+												    background: -77px -48px;								    	
+												    display: inline-block;
+												    margin: 0; 
+												    margin: 0 5px 0 0;
+												    font-style: normal;
+												    vertical-align: middle;
+												    overflow: hidden;
+												    position: relative;
+												    background-image: url(http://static01.fn-mart.com/product/images/detail/sprite_comment_icon.png?170725);
+											    }
+										    }
+								    	}
+								    }
+							    }
+				    		}
+				    	}
+				    }
+		    	}
+		    }
 	    }
 
 	    .detail-depict{
@@ -1447,6 +2044,9 @@ q:before, q:after{
     height: 100%;
     display: none;
 }
+
+
+
 
 .audit-btnArea{
 	
@@ -1666,3 +2266,55 @@ q:before, q:after{
 	    }
     }
 }
+
+
+//售后服务
+
+	.detail-service{
+
+    width: 99.8%;
+    overflow: hidden;
+    margin-bottom: -1px;
+    border: 1px solid #f1f1f1;
+    border-top: 0 none;
+
+    dl{
+
+	    border-bottom: 1px solid #F1F1F1;
+    }
+
+    dt{
+
+	    height: 32px;
+	    line-height: 32px;
+	    font-weight: 700;
+	    padding-left: 30px;
+	    border-bottom: 1px solid #F1F1F1;
+	    background: #FAFAFA;
+
+	    h6{
+
+		    font-weight: 700;
+	    }
+    }
+
+    dd{
+
+	    font-size: 12px;
+	    padding: 9px 30px 16px 30px;
+	    line-height: 26px;
+
+	    li{
+
+		    line-height: 26px;
+	    }
+
+	    a{
+
+		    display: block;
+		    color: #06c;
+		    text-decoration: underline;
+	    }
+    }
+}
+
