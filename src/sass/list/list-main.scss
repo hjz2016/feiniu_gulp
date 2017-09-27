@@ -201,6 +201,8 @@ $hoverC:#d7063b;
 					    }
 
 					    .z_select{
+					    	position:relative;
+					    	z-index:4;
 					    	a{
 
 							    border-color: #c7c7c7;
@@ -435,6 +437,8 @@ $hoverC:#d7063b;
 					    top: 38px;
 					    border: 2px solid #c7c7c7;
 					    background: #fff;
+					    z-index:3;
+
 						
 						.item_more{
 
@@ -1108,7 +1112,9 @@ $hoverC:#d7063b;
 											    display: block;
 											    overflow: hidden;
 											    background: url(http://static02.fn-mart.com/product/images/list_new/list.png?170725) no-repeat;
+										    	background-position: -20px -74px;
 										    }
+
 
 										    .z_disable{
 										    	background-position: -48px -18px;

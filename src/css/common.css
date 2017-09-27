@@ -614,14 +614,14 @@
 		transition: padding-left .3s;
 	}
 
-	.header .center_main .bottom_wrap .good_list .item:hover{
+	.header .center_main .bottom_wrap .good_list .item_hover{
 		background: #d7063b;
 		padding-left: 12px;
 		width: 178px;
 		color: #fff;
 	}
 
-	.header .center_main .bottom_wrap .good_list .item:hover a{
+	.header .center_main .bottom_wrap .good_list .item_hover a{
 		color: #fff;
 	}
 

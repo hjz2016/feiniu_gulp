@@ -9,34 +9,53 @@ define(function(){
 			// 给a加上类
 			$('.hide_list a').addClass('point');
 
-			var flag = false;
+			// var flag = false;
 			var that = this;
 			$('.good_list').children('.item').hover(function(){
+				$('.item').removeClass('item_hover');
+				$('.item').find('use').each(function(){
+					$(this).attr('xlink:href',$(this).data('off'))
+				})
+				
+
+				$(this).addClass('item_hover')
+
 				$('.hide_list_wrap').removeClass('show')
 				$('.hide_list').show();
 				$('.hide_list_wrap').addClass('hide');
 
+				$(this)[0].detailListFlag = false;
 				$('.hide_list_wrap').eq($(this).index()).addClass('show');
+				$(this).find('use').attr('xlink:href',$(this).find('use').data('on'))
 				clearTimeout(that.timer)
 			},function(){
+				var _this = this;
+				$(this).removeClass('item_hover')
+				$(this).find('use').attr('xlink:href',$(this).find('use').data('off'))
 				that.timer = setTimeout(function(){
-					if(flag){
-						flag = false;
+					if($(_this)[0].detailListFlag){
+						$(_this)[0].detailListFlag = false;
 						return;
 					}
 					$('.hide_list').hide();
+					
 				},100)
 			});
 
-			$('.hide_list').mouseenter(function() {
-				flag = true;
+			$('.hide_list .hide_list_wrap').mouseenter(function() {
+				$('.item').eq($(this).index())[0].detailListFlag = true;
+				$('.item').eq($(this).index()).addClass('item_hover')
+				$('.item').eq($(this).index()).find('use').attr('xlink:href',$('.item').eq($(this).index()).find('use').data('on'))
 			}).mouseleave(function() {
+				var _this = this;
 				that.timer = setTimeout(function(){
-					if(flag){
-						flag = false;
-						return;
-					}
+					// if($('.item').eq($(_this).index())[0].detailListFlag){
+					// 	$('.item').eq($(_this).index())[0].detailListFlag = false;
+					// 	return;
+					// }
 					$('.hide_list').hide();
+					$('.item').eq($(_this).index()).removeClass('item_hover')
+					$('.item').eq($(_this).index()).find('use').attr('xlink:href',$('.item').eq($(_this).index()).find('use').data('off'))
 				},100)
 			});
 
@@ -45,11 +64,12 @@ define(function(){
 				.data('on',$(this).attr('xlink:href') + '2');
 			})
 
-			$('.item').hover(function(){
-				$(this).find('use').attr('xlink:href',$(this).find('use').data('on'))
-			},function(){
-				$(this).find('use').attr('xlink:href',$(this).find('use').data('off'))
-			})
+			// $('.item').hover(function(){
+			// 	$(this).find('use').attr('xlink:href',$(this).find('use').data('on'))
+
+			// },function(){
+			// 	$(this).find('use').attr('xlink:href',$(this).find('use').data('off'))
+			// })
 			
 		},
 		chooseCard(){

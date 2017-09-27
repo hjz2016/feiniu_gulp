@@ -24,30 +24,83 @@ define(function(){
         }
         init(){
             var that = this;
+
             $(".pg_num").pagination(Pagination.res.length,{
-                items_per_page:this.showNum, //一页显示多少条;
-                current_page:0,
-                prev_text:'<i>&lt;</i>上一页',
-                next_text:'下一页<i>&gt;</i>',
-                callback:function(index){
-                    that.index = index; //当前显示的页数;
-                    that.rendringPag();
+                    items_per_page:this.showNum, //一页显示多少条;
+                    current_page:0,
+                    prev_text:'<i>&lt;</i>上一页',
+                    next_text:'下一页<i>&gt;</i>',
+                    callback:function(index){
+                        that.index = index; //当前显示的页数;
+                        
+                        // $('.next').removeClass('z_disable')
+                        // $('.prev').removeClass('z_disable')
+                        // // console.log(index)
+                        // if(index == parseInt(Pagination.res.length / that.showNum)){
+                        //     $('.next').addClass('z_disable')
+                        // }else if(index == 0){
+                        //     $('.prev').addClass('z_disable')
+                        // }
 
-                    $('.next').removeClass('z_disable')
-                	$('.prev').removeClass('z_disable')
-
-                    if(index == parseInt(Pagination.res.length / that.showNum)){
-                    	$('.next').addClass('z_disable')
-                    }else if(index == 0){
-                    	$('.prev').addClass('z_disable')
+                        that.rendringPag();
                     }
-                }
-            });
+                })
+
+            // $('.next').click(function(){
+            //     $(".pg_num").pagination(Pagination.res.length,{
+            //         items_per_page:that.showNum, //一页显示多少条;
+            //         current_page:++that.index,
+            //         prev_text:'<i>&lt;</i>上一页',
+            //         next_text:'下一页<i>&gt;</i>',
+            //         callback:function(index){
+            //             that.index = index; //当前显示的页数;
+                        
+
+            //             $('.next').removeClass('z_disable')
+            //         	$('.prev').removeClass('z_disable')
+            //             // console.log(index)
+            //             if(index == parseInt(Pagination.res.length / that.showNum)){
+            //             	$('.next').addClass('z_disable')
+            //             }else if(index == 0){
+            //             	$('.prev').addClass('z_disable')
+            //             }
+
+            //             that.rendringPag();
+            //         }
+            //     })
+            // })
+
+            // $('.prev').click(function(){
+            //     $(".pg_num").pagination(Pagination.res.length,{
+            //         items_per_page:that.showNum, //一页显示多少条;
+            //         current_page:--that.index,
+            //         prev_text:'<i>&lt;</i>上一页',
+            //         next_text:'下一页<i>&gt;</i>',
+            //         callback:function(index){
+            //             that.index = index; //当前显示的页数;
+                        
+
+            //             $('.next').removeClass('z_disable')
+            //             $('.prev').removeClass('z_disable')
+            //             // console.log(index)
+            //             if(index == parseInt(Pagination.res.length / that.showNum)){
+            //                 $('.next').addClass('z_disable')
+            //             }else if(index == 0){
+            //                 $('.prev').addClass('z_disable')
+            //             }
+            //             that.rendringPag();
+            //         }
+            //     })
+            // })
 
             // 绑定跳转事件
             $('.pg_act .btn').click(function() {
+                console.log($(this).parent().children('.ipt').val())
+            	var pN = Number($(this).parent().children('.ipt').val()) - 1;
 
-            	var pN = Number($(this).parent().children('.ipt').val());
+                if(pN<0 || pN > (Pagination.res.length / that.showNum)){
+                    return;
+                }
 
             	$(".pg_num").pagination(Pagination.res.length,{
 	                items_per_page:that.showNum, //一页显示多少条;
@@ -56,24 +109,35 @@ define(function(){
 	                next_text:'下一页<i>&gt;</i>',
 	                callback:function(index){
 	                    that.index = index; //当前显示的页数;
-	                    that.rendringPag();
+	                    
 
-						$('.next').removeClass('z_disable')
-                    	$('.prev').removeClass('z_disable')
-
-	                    if(pN == Pagination.res.length - 1){
-	                    	$('.next').addClass('z_disable')
-	                    }else if(pN == 0){
-	                    	$('.prev').addClass('z_disable')
-	                    }
-
+						// $('.next').removeClass('z_disable')
+      //               	$('.prev').removeClass('z_disable')
+      //                   // console.log(Math.round(Pagination.res.length / that.showNum))
+	     //                if(pN + 1 == Math.round(Pagination.res.length / that.showNum)){
+	     //                	$('.next').addClass('z_disable')
+	     //                }else if(pN == 0){
+	     //                	$('.prev').addClass('z_disable')
+	     //                }
+                        that.rendringPag();
+                        $(this).parent().children('.ipt').val('');
 	                }
 	            });
 				
-            	$(this).parent().children('.ipt').val('');
+            	
             });
         }
         rendringPag(){
+
+            $('.next').removeClass('z_disable')
+            $('.prev').removeClass('z_disable')
+            console.log(this.index)
+            if(this.index == parseInt(Pagination.res.length / this.showNum)){
+                $('.next').addClass('z_disable')
+            }else if(this.index == 0){
+                $('.prev').addClass('z_disable')
+            }
+
             $('.text_total span').html(Pagination.res.length)
             var html = ``;
             for(var i = this.index * this.showNum , good; i < (this.index + 1)* this.showNum; i++){

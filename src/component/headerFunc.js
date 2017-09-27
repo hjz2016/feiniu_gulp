@@ -135,6 +135,13 @@ define(function(){
 		cityShow(){
 			// 选择城市
 			this.toggle('.city','.hide_city','city_hover');
+
+			$('.hide_city li a').click(function(){
+				$(this).parents('.hide_city').find('li a').removeClass('z-select')
+				$(this).addClass('z-select')
+				$('.city .red').html($(this).html());
+				$('.hide_city').hide();
+			})
 		}
 
 		firstToggle(){

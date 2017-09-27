@@ -151,7 +151,7 @@ define(function(){
 
 			addBtn.click(function(){
 				var val = Number(ipt.val());
-				minusBtn.css({color: '#6C6C6C'});
+				addBtn.css({color: '#6C6C6C'});
 				if(val < 20){
 					val++;
 				}
