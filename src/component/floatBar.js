@@ -8,6 +8,9 @@ define(function(){
 			this.hideSmallIcon()
 			this.smallIconHover();
 
+			// 搜索框
+			this.searchContEvt();
+
 			// 购物车
 			this.floatCart();
 			this.refreshCartCont();
@@ -136,6 +139,146 @@ define(function(){
 					right:'-90px'
 				},500)
 			});
+		},
+		searchContEvt(){
+			var flag = false;
+			var that = this;
+
+			// 搜索框按钮
+			$('#fix_search_btn').click(function(e) {
+				e.preventDefault();
+				if($('#fix_search_txt').val() == ''){
+					$('#fix_search_txt').focus(function() {});
+				}else{
+					// 跳转
+					var aVal = $('#fix_search_txt').val();
+					setCookie('type',aVal,1,'/');
+					location.href="goodlists.html"
+				}
+			});
+
+			
+
+			// 输入框失焦
+			$('#fix_search_txt').blur(function(){
+				setTimeout(function(){
+					$('.fix_search_cont').hide();
+				},100)
+			})
+
+			// 输入内容触发
+			$('#fix_search_txt')[0].oninput = function(){
+				// 进行ajax请求
+				var val = $(this).val();
+				that.searchAjax(val);
+				$('.fix_search_cont').show();
+			};
+
+			$('.fix_search_cont').mouseenter(function() {
+				$('.fix_search_cont').show();
+				flag = true;
+			}).mouseleave(function() {
+				setTimeout(function(){
+					if(flag){
+						flag = false;
+						return;
+					}
+					$('.fix_search_cont').hide();
+				},500)
+			});
+		},
+		searchAjax(val){
+			$.ajax({
+				url : 'http://www.feiniu.com/ajax/autocomplete',
+				type : 'GET',
+				dataType : "jsonp",
+				data : {
+					term : val
+				}
+			})
+			.then(function(res){
+				var html = '';
+				for(var i = 0 ; i < res.length ; i++){
+					html += '<li><a>'+res[i].label+'</a></li>';
+				}
+				$('.fix_search_cont').html(html);
+
+				// 键盘事件
+				
+				var curIndex = 0,
+					firstFlag = true,
+					lth = $('.fix_search_cont li').length - 1;
+
+				$(document).keyup(function(e){
+					e = e || window.event;
+
+					var keyC = e.keyCode;
+
+					$('.fix_search_cont li').css({
+						background : '#fff'
+					})
+
+					if(keyC == 38){
+						if(firstFlag){
+							// 第一次
+							$('.fix_search_cont li:last-child').css({
+								background : 'pink'
+							});
+							firstFlag = false;
+							curIndex = lth;
+						}else{
+							if(curIndex == 0){
+								curIndex = lth;
+							}else{
+								curIndex--;
+							}
+							
+							$('.fix_search_cont li').eq(curIndex).css({
+								background : 'pink'
+							});
+						}
+						$('#fix_search_txt').val($('.fix_search_cont li a').eq(curIndex).html());
+					}
+
+					if(keyC == 40){
+						if(firstFlag){
+							// 第一次
+							$('.fix_search_cont li:first-child').css({
+								background : 'pink'
+							});
+							firstFlag = false;
+							curIndex = 0;
+						}else{
+							if(curIndex == lth){
+								curIndex = 0;
+							}else{
+								curIndex++;
+							}
+							
+							$('.fix_search_cont li').eq(curIndex).css({
+								background : 'pink'
+							});
+						}
+						$('#fix_search_txt').val($('.fix_search_cont li a').eq(curIndex).html())
+					}
+
+					if(keyC == 13){
+						// Enter
+						$('#fix_search_btn').trigger('click')
+					}
+				});
+
+				// 给a绑定跳转事件
+				$('.fix_search_cont li a').click(function(e) {
+					
+					var aVal = $(this).html();
+					
+					setCookie('type',aVal,1,'/');
+					location.href="goodlists.html"
+				});
+			},function(err){
+				console.log('出错了：' + err.statusText)
+			})
 		},
 		floatCart(){
 			if(getCookie('cartItem')){

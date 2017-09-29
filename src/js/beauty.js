@@ -78,9 +78,11 @@ define(function(){
 										<ul class="list_ctx">`;
 							for(var i = 0 ; i < res[k].body.length;i++){			
 								type_str+=	`<li>
+												<a href="javascript:;">
 													<img src=${res[k].body[i].src} alt="">
 													<p><a class="red" href="">${res[k].body[i].title}</a></p>
 													<p class="goods_price"><span>￥</span><span>${res[k].body[i].price}</span></p>
+												</a>
 											</li>`;	
 							}
 

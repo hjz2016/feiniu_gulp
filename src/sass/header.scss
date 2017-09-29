@@ -83,12 +83,12 @@
 	}
 
 // 搜索框
-.header .center_main .center_wrap .search_wrap{
-	.search_cont{
+.header .center_main .center_wrap .search_wrap,.fix_search{
+	.search_cont,.fix_search_cont{
 		width: 439px;
 		border: 1px solid #ccc;
 		position: absolute;
-		background: #fff;
+		background: #fff; 
 		z-index: 999999;
 		display: none;
 		

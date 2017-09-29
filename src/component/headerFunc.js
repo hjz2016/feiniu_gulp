@@ -220,6 +220,8 @@ define(function(){
 				}
 			});
 
+			
+
 			// 输入框失焦
 			$('#search_txt').blur(function(){
 				setTimeout(function(){

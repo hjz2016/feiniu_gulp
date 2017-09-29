@@ -6,6 +6,9 @@ define(function(){
 			this.showList();
 			this.clickProdJump();
 			this.checkCartNum();
+
+			// 换一批
+			this.chgList();
 		},
 		bindEvt(){
 			var that = this;
@@ -262,6 +265,42 @@ define(function(){
 			}
 
 			$('#cart_num').html(num)
+		},
+		chgList(){
+			var chgBtn = $('.change');
+
+			chgBtn.click(function(){
+				var html = '';
+				var that = this;
+				// 请求数据
+				$.ajax('data/list-chg.json')
+				.then(function(res){
+
+					for(var i = 0 ; i < 6 ; i++){
+						var ranInt = res[parseInt(Math.random()*12)];
+						html += `<li class="prod">           
+			                        <div class="p_img">               
+			                            <a href="javascript:;" title=${ranInt.tt} target="_blank">                   
+			                                <img src=${ranInt.src} height="160" width="160" alt="">               
+			                            </a>           
+			                        </div>           
+			                        <div class="p_name">               
+			                            <a href="javascript:;" title=${ranInt.tt} target="_blank">贝兹卡洛Bescarol男童长裤春秋款童装男童色织条条纹卫裤运动裤621259</a>           
+			                        </div>           
+			                        <div class="p_price">               
+			                            <span class="now">¥${ranInt.c_price}</span>                              
+			                            <del class="old">¥${ranInt.o_price}</del>                         
+			                        </div>   
+			                    </li>`;
+					}
+
+					$('.like_cont ul').html(html)
+				},function(xhr,err){
+					console.log(err)
+				})
+
+				
+			})
 		}
 	};
  	
